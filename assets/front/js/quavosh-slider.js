@@ -1,7 +1,7 @@
 const slideIndex = [];
 const sliders = [];
 const slide_l = [];
-const speed = 6000; //time between auto slides in ms
+const speed = 8000; //time between auto slides in ms
 var qs_touchstart;
 var qs_touchend;
 var qs_swipe_l;

@@ -73,6 +73,12 @@ body {
   overflow-y: hidden;
   max-height: 600px;
 }
+.absolute_box{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index:1;
+}
 .flex_box {
   width: 100%;
   display: flex;

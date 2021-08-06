@@ -34,7 +34,8 @@
 
     .navbar_ruton {
       width: 100%;
-      height: 141px;
+      min-height: 141px;
+      display: flex;
       position: fixed;
       padding-left: 9vw;
       padding-right: 9vw;
@@ -43,7 +44,7 @@
     .navbar_section {
       display: flex;
       width: 50%;
-      height: inherit;
+      min-height: 141px;
     }
 
     .navbar_spacer {
@@ -51,137 +52,69 @@
       height: 160px;
     }
 
-    .navbar_section p {
+    .navbar_list {
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      width: 100%;
+    }
+
+    .navbar_list p {
       font: normal normal medium 18px/22px Montserrat;
       letter-spacing: 0px;
       color: black;
       text-transform: uppercase;
       opacity: 1;
-      padding: 0px 10px 0px 10px;
+      padding: 0px 14px 0px 14px;
       font-weight: 600;
     }
 
-    .nav {
-      height: 50px;
-      width: 100%;
-      position: relative;
+    .navbar_bars {
+      width: 24px;
+      height: 24px;
     }
 
-    .nav>.nav-header {
-      display: inline;
+    .navbar_logo {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      height: 70px;
+      margin-right: 12px;
     }
 
-    .nav>.nav-header>.nav-title {
-      display: inline-block;
-      font-size: 22px;
-      color: #fff;
-      padding: 10px 10px 10px 10px;
-    }
+    @media(max-width: 1600px) {}
 
-    .nav>.nav-btn {
-      display: none;
-    }
-
-    .nav>.nav-links {
-      display: inline;
-      float: right;
-      font-size: 18px;
-    }
-
-    .nav>.nav-links>a {
-      display: inline-block;
-      padding: 13px 10px 13px 10px;
-      text-decoration: none;
-      color: #efefef;
-    }
-
-    .nav>.nav-links>a:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .nav>#nav-check {
-      display: none;
-    }
-
-    @media (max-width:600px) {
-      .nav>.nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-      }
-
-      .nav>.nav-btn>label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-      }
-
-      .nav>.nav-btn>label:hover,
-      .nav #nav-check:checked~.nav-btn>label {
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-
-      .nav>.nav-btn>label>span {
+    @media(max-width: 1024px) {
+      .navbar_ruton {
         display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
+        min-height: unset;
       }
 
-      .nav>.nav-links {
-        position: absolute;
-        display: block;
+      .navbar_section {
         width: 100%;
-        background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
+        min-height: 40px;
       }
 
-      .nav>.nav-links>a {
+      .navbar_list {
         display: block;
-        width: 100%;
-      }
-
-      .nav>#nav-check:not(:checked)~.nav-links {
         height: 0px;
-      }
-
-      .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+        transition: 0.4s;
       }
     }
   </style>
   <header>
     <div class="navbar_ruton debug_black">
-      <div class="flex_box" style="height:inherit">
-        <div class="navbar_section flex_align_c debug_red">RUTON</div>
-        <div class="navbar_section flex_align_c flex_c debug_blue">
-          <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-
-            <div class="nav-links">
-              <a href="//github.io/jo_geek" target="_blank">Github</a>
-              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-              <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-              <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
-            </div>
-          </div>
+      <div class="navbar_section flex_align_c flex_mob"><span class="navbar_logo">RUTON</span>
+        <button class="navbar-toggler navbar-toggler-right tab_block" onclick="toggle_nav()" type="button" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="navbar_bars" src="<?= base_url('assets/front/img/bars-solid.svg') ?>">
+        </button>
+      </div>
+      <div class="navbar_section flex_align_c">
+        <div class="navbar_list flex_c" id="navbar">
+          <p>Fotowoltaika</p>
+          <p>Samodzielny Montaż</p>
+          <p>Poradnik</p>
+          <p>Kontakt</p>
         </div>
       </div>
     </div>

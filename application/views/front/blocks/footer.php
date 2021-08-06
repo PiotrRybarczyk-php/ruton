@@ -13,6 +13,12 @@
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 
 <script>
+    var navbar_on = false;
+
+    function reset_bar() {
+        document.getElementById('navbar').style.removeProperty('height');
+    }
+    window.onresize = reset_bar;
     grecaptcha.ready(function() {
         grecaptcha.execute('<?= $settings->captcha ?>', {
             action: 'homepage'
@@ -20,6 +26,18 @@
 
         });
     });
+
+    function toggle_nav() {
+        var element = document.getElementById('navbar');
+        if (navbar_on == false) {
+            navbar_on = true;
+            element.style.height = "160px";
+
+        } else {
+            navbar_on = false;
+            element.style.height = "0px";
+        }
+    }
 </script>
 <!-- <script>
     window.addEventListener("load", function() {

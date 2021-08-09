@@ -2,9 +2,24 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+*,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
 body {
   overflow-x: hidden;
   top: 0px !important;
+  display: block;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 :root {
   --c2: 50%;
@@ -94,8 +109,8 @@ body {
   margin-bottom: 30px;
 }
 .main_padding {
-  padding-left: 6.6vw;
-  padding-right: 6.6vw;
+  padding-left: 5.0vw;
+  padding-right: 5.0vw;
 }
 .medium_padding {
   padding-left: 1.2vw;

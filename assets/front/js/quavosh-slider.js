@@ -2,11 +2,13 @@ const slideIndex = [];
 const sliders = [];
 const slide_l = [];
 const speed = 8000; //time between auto slides in ms
+const press = 1000; //pause for slider button press
+var is_ready = true;
 var qs_touchstart;
 var qs_touchend;
 var qs_swipe_l;
 var number_of_sliders;
-var timer;
+var timer, press_timer;
 var y;
 var sliderclass;
 
@@ -37,7 +39,11 @@ function make_timer() {
 
 //reapply delay
 function reset_timer() {
+    is_ready = false;
     clearTimeout(timer);
+    timer = setTimeout(function () {
+        is_ready = true;
+    }, press);
     make_timer();
 }
 
@@ -51,34 +57,39 @@ function make_dots(n, box, id) {
 
 //next slide
 function plusSlides(id) {
-    sliderclass = sliders[id].classList[0];
-    if (sliderclass == 'fader') {
-        S_Fader(slideIndex[id] += 1, id);
-    } else if (sliderclass == 'mover') {
-        S_Carousel(slideIndex[id] += 1, id);
-    } else if (sliderclass == 'rotate') {
-        S_Rotate(slideIndex[id] += 1, id);
-    } else if (sliderclass == 'scaler') {
-        S_Scaler(slideIndex[id] += 1, id);
+    if (is_ready == true) {
+        sliderclass = sliders[id].classList[0];
+        if (sliderclass == 'fader') {
+            S_Fader(slideIndex[id] += 1, id);
+        } else if (sliderclass == 'mover') {
+            S_Carousel(slideIndex[id] += 1, id);
+        } else if (sliderclass == 'rotate') {
+            S_Rotate(slideIndex[id] += 1, id);
+        } else if (sliderclass == 'scaler') {
+            S_Scaler(slideIndex[id] += 1, id);
+        }
+        reset_timer();
     }
-    reset_timer();
 }
 //previous slide
 function minusSlides(id) {
-    sliderclass = sliders[id].classList[0];
-    if (sliderclass == 'fader') {
-        S_Fader(slideIndex[id] -= 1, id);
-    } else if (sliderclass == 'mover') {
-        S_Carousel(slideIndex[id] -= 1, id);
-    } else if (sliderclass == 'rotate') {
-        S_Rotate(slideIndex[id] -= 1, id);
-    } else if (sliderclass == 'scaler') {
-        S_Scaler(slideIndex[id] -= 1, id);
+    if (is_ready == true) {
+        sliderclass = sliders[id].classList[0];
+        if (sliderclass == 'fader') {
+            S_Fader(slideIndex[id] -= 1, id);
+        } else if (sliderclass == 'mover') {
+            S_Carousel(slideIndex[id] -= 1, id);
+        } else if (sliderclass == 'rotate') {
+            S_Rotate(slideIndex[id] -= 1, id);
+        } else if (sliderclass == 'scaler') {
+            S_Scaler(slideIndex[id] -= 1, id);
+        }
+        reset_timer();
     }
-    reset_timer();
 }
 //choose slide
 function currentSlide(n, id) {
+
     sliderclass = sliders[id].classList[0];
     if (sliderclass == 'fader') {
         S_Fader(slideIndex[id] = n, id);
@@ -90,6 +101,7 @@ function currentSlide(n, id) {
         S_Scaler(slideIndex[id] = n, id);
     }
     reset_timer();
+
 }
 //make onclick event for previous button
 function side_prev(box, id) {

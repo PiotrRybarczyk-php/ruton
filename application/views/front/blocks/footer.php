@@ -4,7 +4,7 @@
 </footer>
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <!-- <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script> -->
-<script type="text/javascript" src="<?= assets(); ?>dist/owl.carousel.min.js"></script>
+<!-- <script type="text/javascript" src="<?= assets(); ?>dist/owl.carousel.min.js"></script> -->
 <script type="text/javascript" src="<?= assets(); ?>js/lc_lightbox.lite.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lightbox.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/qanim.js"></script>
@@ -18,6 +18,7 @@
     window.onload = function() {
         //put here all library functions
         quavosh_slider(1);
+        qanim();
     };
 
     function reset_bar() {

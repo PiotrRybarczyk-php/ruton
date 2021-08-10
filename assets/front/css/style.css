@@ -1,3 +1,8 @@
+
+    section{
+      position: relative;
+    }
+
     .navbar_ruton {
       width: 100%;
       min-height: 141px;
@@ -289,6 +294,32 @@
        margin-bottom: 16px;
     }
 
+    .custom_flex{
+      display: flex;
+      width: 100%;
+    }
+    .custom_box-1{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: 1063px;
+    }
+    .custom_box-2{
+      width: 100%;
+      max-width: 700px;
+    }
+    .map_box{
+      max-width:700px;
+      width: 100%;
+      height: 610px;
+    }
+
+    .desc_5 {
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: none;
+    }
+
    .ruton_padding {
         padding-left: 11vw;
         padding-right: 11vw;
@@ -453,6 +484,106 @@
       min-height:660px;
     }
 
+    .guide_img{
+      background-color: rgba(0,0,0,0);
+      background-position: 100% center;
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+    }
+
+    .guide_box{
+      width: 100%;
+      display: flex;
+    }
+
+    .guide_1{
+      padding-left: 52px;
+      width: 100%;
+      max-width: 767px;
+    }
+    .guide_bc{
+      width: 100%;
+      height: 325px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .guide_1 h1{
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .guide_desc{
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .guide_2{
+      padding-left: 30px;
+      width: 34%;
+    }
+
+    .guide_tile{
+      display: flex;
+      margin-bottom: 24px;
+      flex-direction: column;
+      width: 100%;
+      height: 351px;
+    }
+
+    .tile_pic{
+      width: 100%;
+      height: 60%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tile_text{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      text-align: right;
+      padding-right: 10px;
+      width: 100%;
+      height: 40%;
+      background-color: #95C11F;
+      color: white;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .guide_button{
+      position: relative;
+      width: 100%;
+      height: 161px;
+      overflow-x: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      text-align: right;
+      padding-right: 10px;
+      background-color: #FDAF2A;
+      color: white;
+      font-size: 28px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .guide_button .arrow{
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 5px;
+      right: 100%;
+      transition: 0.4s;
+    }
+
+    .guide_button:hover > .arrow{
+      right: 3%;
+    }
+
     @media(max-width: 1600px) {
       .fader .dot_box {
         left: 28% !important;
@@ -478,6 +609,13 @@
         max-width: 38%;
         padding-left: 4.2vw;
       }
+      .tile_text{
+        align-items: flex-end;
+        font-size: 1.4vw;
+       }
+       .guide_button{
+         font-size: 1.4vw;
+       }
     }
 
     @media(max-width: 1024px) {
@@ -496,6 +634,20 @@
 
       .scaler{
         min-height: 800px;
+      }
+
+      .custom_flex{
+        display: block;
+      }
+
+      .custom_box-1{
+        justify-content: center;
+      }
+
+      .custom_box-2{
+        display: flex;
+        justify-content: center;
+        max-width: unset;
       }
 
       .temp_flex div {
@@ -553,7 +705,7 @@
       }
 
       .desk_pad {
-        font-size: 5.2vw;
+        font-size: 6.2vw;
         width: 90% !important;
       }
 
@@ -664,12 +816,42 @@
       }
 
       .ruton_title{
-        font-size: 50px;
+        font-size: 6.2vw;
       }
       .title_offset{
         position: relative;
         top: 1%;
         right: 0%;
+      }
+      .map_box{
+        height: 360px;
+      }
+
+      .guide_box{
+        display: block;
+      }
+
+      .guide_img{
+        background-position: 75% center;
+        height: 400px;
+      }
+
+      .guide_1{
+        padding-left: 0px;
+      }
+
+      .guide_1 h1{
+        font-size: 32px;
+      }
+      .guide_2{
+        padding-left: 0px;
+        width: 100%;
+      }
+      .tile_text{
+        font-size: 28px;
+      }
+      .guide_button{
+        font-size: 28px;
       }
     }
     @media(max-width:350px){

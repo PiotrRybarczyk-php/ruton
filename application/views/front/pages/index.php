@@ -274,3 +274,59 @@
         </div>
     </div>
 </section>
+<section class="sep_top-xl">
+    <div class="custom_flex sep_top-xl main_padding">
+        <div class="custom_box-1">
+            <span class="bc_square tab_hide" style="max-width:639px;width:100%;height:340px;left:600px;"></span>
+            <div class="block_normal desk_pad no_margin tab_size-2">
+                <span class="top_line"></span>
+                <div class="sep_top-l">
+                    <p>Jesteśmy</p>
+                    <p><i>blisko</i> ciebie</p>
+                    <div class="desc_5 sep_top-m">
+                        <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum. Nam pellentesque tincidunt, risus tortor, fermentum augue. Sed eros. Sed aliquet ultrices posuere, odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per conubia nostra, per conubia nostra, per conubia nostra, per inceptos hymenaeos. Curabitur feugiat lectus lectus, eu condimentum sit amet libero mollis ac, varius nunc ac pede.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom_box-2">
+            <div class="map_box debug_black">Tu będzie mapa google</div>
+        </div>
+    </div>
+</section>
+<section class="sep_top-xl">
+    <span class="bc_square tab_hide" style="max-width:1200px;width:100%;height:340px;top:370px;left:180px;"></span>
+    <div class="grid-3 gtab-2 main_padding">
+        <div class="block_normal desk_pad tab_size-2" style="margin-left:unset;">
+            <span class="top_line"></span>
+            <div class="sep_top-l">
+                <p>Z Naszego</p>
+                <p><i>Poradnika</i></p>
+            </div>
+            <div class="guide_img" style="background-image:url(<?= base_url('assets/front/img/panel_alpha.png'); ?>);">
+
+            </div>
+        </div>
+        <div class="guide_box size-2">
+            <div class="guide_1">
+                <div class="guide_bc" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg'); ?>)"></div>
+                <h1>Lorem ipsum dolor sit amet mi facilisis enim.</h1>
+                <div class="guide_desc">Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum. Nam pellentesque tincidunt, risus tortor, fermentum augue. Sed eros. Sed aliquet ultrices posuere, odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per conubia nostra, per conubia nostra, per conubia nostra, per inceptos hymenaeos. Curabitur feugiat lectus lectus, eu condimentum sit amet libero mollis ac, varius nunc ac pede. Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum.</div>
+            </div>
+            <div class="guide_2">
+                <div class="guide_tile">
+                    <div class="tile_pic" style="background-image:url(<?= base_url('assets/front/img/bulb.jpg'); ?>)"></div>
+                    <div class="tile_text">LOREM IPSUM DOLOR SIT AMET</div>
+                </div>
+                <div class="guide_tile">
+                    <div class="tile_pic" style="background-image:url(<?= base_url('assets/front/img/calc.jpg'); ?>)"></div>
+                    <div class="tile_text">LOREM IPSUM DOLOR SIT AMET</div>
+                </div>
+                <a href="#" class="guide_button">
+                    <span class="arrow" style="background-image:url(<?= base_url('assets/front/icons/arrow-right.svg'); ?>)"></span>
+                    Sprawdź wszystkie nasze porady
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

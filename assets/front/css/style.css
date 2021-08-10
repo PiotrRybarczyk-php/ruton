@@ -628,6 +628,10 @@
         display: block;
       }
 
+      .call_block{
+        padding: 0px 6px 0px 6px;
+      }
+
       .s_box {
         height: 186px;
         overflow: visible;

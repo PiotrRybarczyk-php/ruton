@@ -1,6 +1,9 @@
 </main>
-<footer>
-
+<footer class="main_padding">
+    <div class="block-1">
+        <h1 class="title"><span class="top_line"></span>kontakt</h1>
+    </div>
+    <div class="block-2"></div>
 </footer>
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <!-- <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script> -->

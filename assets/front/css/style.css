@@ -584,6 +584,33 @@
       right: 3%;
     }
 
+    footer{
+      position: relative;
+      margin-top: 160px;
+      display: flex;
+      width: 100%;
+      min-height: 266px;
+      background-color: #F6F6F6;
+    }
+    footer .block-1{
+    width: 100%;
+    max-width: 795px;
+    min-height: 100%;
+    }
+    footer .block-2{
+    width: 100%;
+    min-height: 100%;
+    background-color: #95C11F;
+    }
+
+    footer .title{
+     position: absolute;
+     font-size: 60px;
+     color: #95C11F;
+     text-transform: uppercase;
+     top: -30%;
+    }
+
     @media(max-width: 1600px) {
       .fader .dot_box {
         left: 28% !important;

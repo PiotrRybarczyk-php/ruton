@@ -17,7 +17,7 @@
 
     window.onload = function() {
         //put here all library functions
-        quavosh_slider(1);
+        quavosh_slider(2);
         qanim();
     };
 
@@ -37,7 +37,7 @@
         var element = document.getElementById('navbar');
         if (navbar_on == false) {
             navbar_on = true;
-            element.style.height = "160px";
+            element.style.height = "172px";
 
         } else {
             navbar_on = false;

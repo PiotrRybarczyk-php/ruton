@@ -7,6 +7,7 @@
       padding-right: 9vw;
       z-index: 200;
       background-color: white;
+      box-shadow: 0px 10px 13px -15px #000000;
     }
 
     .navbar_section {
@@ -165,6 +166,19 @@
       z-index: 2;
     }
 
+    .s2_img{
+      background-position: center;
+      background-size: cover;
+      max-width: 626px;
+      width: 100%;
+      height: 512px;
+      margin-top: 30px;
+    }
+
+    .s2_spacer{
+      width: 10vw;
+    }
+
     .bc_square {
       position: absolute;
       width: 25px;
@@ -260,7 +274,9 @@
        background-position: center;
        background-size: cover;
        max-width: 527px;
+       width: 100%;
        min-height: 350px;
+       margin-bottom: 16px;
 
     }
 
@@ -268,7 +284,9 @@
        background-position: center;
        background-size: cover;
        max-width: 800px;
+       width: 100%;
        min-height: 350px;
+       margin-bottom: 16px;
     }
 
    .ruton_padding {
@@ -365,18 +383,79 @@
         position: relative;
     }
 
-    .ruton_title .top_line{
-        left: 44%;
-    }
-
     h1 i {
         font-style: normal;
         color: #95C11F;
       }
 
+    .title_offset{
+      position: absolute;
+      top: 1%;
+      right: 25%;
+    }
+
+    .desc_4{
+      font-size: 18px;
+      max-width: 686px;
+      text-align: center;
+    }
+
+    .call_block{
+      position: relative;
+      display: flex;
+      background-color: #F6F6F6;
+      max-width:603px;
+      width: 100%;
+      height: 162px;
+
+    }
+    .call_icon{
+       position: absolute;
+       width:180px;
+       height:166px;
+       top: 20px;
+       left: -108px;
+    }
+
+    .call_number{
+      position: absolute;
+      left: 120px;
+      width: 600px;
+      height: 110px;
+      font-size: 72px;
+      margin: 0px 0px 0px 0px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .call_number i {
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .s2_desc{
+      max-width: 44%;
+      width: 100%;
+      padding-top: 9%;
+      padding-left: 8.2vw;
+    }
+
+    .s2_desc h1{
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .s2_desc p{
+      font-size: 18px;
+    }
+
+    .scaler{
+      min-height:660px;
+    }
+
     @media(max-width: 1600px) {
-      .dot_box {
-        left: 28%;
+      .fader .dot_box {
+        left: 28% !important;
       }
       .info_item{
           width: 97%;
@@ -384,6 +463,20 @@
 
       .info_text p{
           font-size: 22px;
+      }
+      .desc_3 {
+        max-width: 500px;
+        text-align: center;
+      }
+      .title_offset{
+        right: 10%;
+      }
+      .scaler{
+        min-height:680px;
+      }
+      .s2_desc{
+        max-width: 38%;
+        padding-left: 4.2vw;
       }
     }
 
@@ -393,16 +486,28 @@
         min-height: unset;
       }
 
+      .title_offset{
+        top: -60px;
+      }
+
       .temp_flex {
         display: block;
+      }
+
+      .scaler{
+        min-height: 800px;
       }
 
       .temp_flex div {
         width: 100%;
       }
 
-      .dot_box {
-        left: 10%;
+      .desc_3 {
+        max-width: 620px;
+      }
+
+      .fader .dot_box {
+        left: 10% !important;
       }
 
       .info_2{
@@ -416,7 +521,7 @@
 
       .info_text p{
         font-size: 28px;
-    }
+      }
 
       .absolute_box div {
         font-size: 4vw;
@@ -438,7 +543,7 @@
       .navbar_section {
         padding-top: 15px;
         width: 100%;
-        min-height: 40px;
+        min-height: 10px;
       }
 
       .navbar_list {
@@ -451,6 +556,34 @@
         font-size: 5.2vw;
         width: 90% !important;
       }
+
+      .desc_3-img1{
+        max-width: 526px;
+        min-height: 300px;
+ 
+     }
+ 
+     .desc_3-img2{
+        max-width: 526px;
+        min-height: 300px;
+     }
+     .s2_spacer{
+      width: 5vw;
+     }
+     .s2_img{
+       max-width: 490px;
+       height: 400px;
+     }
+     .s2_desc{
+       max-width: 100%;
+       padding-top: 1%;
+     }
+     .s2_desc p{
+      font-size: 16px;
+     }
+     .scaler .Slides{
+       display: block;
+     }
     }
 
     @media(max-width:500px) {
@@ -458,12 +591,37 @@
         width: 100%;
       }
 
+      .call_number{
+        position: absolute;
+        text-align: right;
+        right: 0px;
+        padding-right: 10px;
+        left: unset;
+        width: 80%;
+        font-size: 7vw;
+      }
+
+      .call_icon{
+        position: absolute;
+        width:120px;
+        height:166px;
+        top: unset;
+        left: unset;
+     }
+
       .content p {
         font-size: 16px;
       }
 
       .fader {
         min-height: 480px;
+      }
+
+      .scaler{
+        min-height: 1072px;
+      }
+      .scaler .dot_box{
+        left: unset;
       }
 
       .s_content {
@@ -485,11 +643,11 @@
         padding-left: 17vw;
       }
 
-      .dot_box {
-        left: 18%;
+      .fader .dot_box {
+        left: 18% !important;
       }
 
-      .dot {
+      .fader .dot {
         background-color: #FDAF2A;
       }
 
@@ -499,5 +657,19 @@
 
       .desc_1 {
         font-size: 16px;
+      }
+
+      .ruton_title{
+        font-size: 50px;
+      }
+      .title_offset{
+        position: relative;
+        top: 1%;
+        right: 0%;
+      }
+    }
+    @media(max-width:350px){
+      .scaler{
+        min-height: 1124px;
       }
     }

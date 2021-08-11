@@ -1,9 +1,36 @@
 </main>
-<footer class="main_padding">
+<footer>
     <div class="block-1">
         <h1 class="title"><span class="top_line"></span>kontakt</h1>
+        <div class="f-content">
+            <span class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></span>
+            <div class="footer_contact">
+                <p>ulica, kod miasto</p>
+                <p>tel. <a href="#">+48 500 500 500</a></p>
+                <p>email. <a href="#">test@test.com</a></p>
+            </div>
+        </div>
     </div>
-    <div class="block-2"></div>
+    <div class="block-2">
+        <div class="grid-12">
+            <div class="f-content size-3 mob_size-6">
+                <h1>Ważne Informacje</h1>
+                <a href="#">pliki cookies</a><br>
+                <a href="#">polityka rodo</a><br>
+                <a href="#">kontakt</a>
+            </div>
+            <div class="f-content size-6">
+                <h1>Oferta:</h1>
+                <a href="#">FOTOWOLTAIKA Z MONTAŻEM</a><br>
+                <a href="#">DO SAMODZIELNEGO MONTAŻU</a><br>
+                <a href="#">PORADNIK</a>
+            </div>
+            <div class="f-content size-3 mob_size-12">
+                <h1>Nasze Media:</h1>
+                <a href="#"><img class="social_icon" src="<?= base_url('assets/front/icons/fb.svg'); ?>"></a><br>
+            </div>
+        </div>
+    </div>
 </footer>
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <!-- <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script> -->

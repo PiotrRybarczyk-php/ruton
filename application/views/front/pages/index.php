@@ -290,7 +290,7 @@
             </div>
         </div>
         <div class="custom_box-2">
-            <div class="map_box debug_black">Tu będzie mapa google</div>
+            <div class="map_box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.6720013395557!2d16.174381315963842!3d51.20669524046529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f0d628b86c7af%3A0xe609f38f2e447933!2sFabryczna%2022%2C%2059-220%20Legnica!5e0!3m2!1spl!2spl!4v1628680267190!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
     </div>
 </section>

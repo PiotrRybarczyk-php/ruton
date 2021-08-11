@@ -591,16 +591,18 @@
       width: 100%;
       min-height: 266px;
       background-color: #F6F6F6;
+      padding-left: 5.0vw;
     }
     footer .block-1{
     width: 100%;
-    max-width: 795px;
+    max-width: 720px;
     min-height: 100%;
     }
     footer .block-2{
     width: 100%;
     min-height: 100%;
     background-color: #95C11F;
+    padding-right: 5.0vw;
     }
 
     footer .title{
@@ -609,6 +611,80 @@
      color: #95C11F;
      text-transform: uppercase;
      top: -30%;
+    }
+
+    .block-1 .f-content{
+         display: flex;
+         margin-top: 6vw;
+         max-width: 650px;
+         width: 100%;
+         min-height: 116px;
+    }
+    footer .navbar_logo{
+      width: 50%;
+    }
+    .block-2 .f-content{
+      width: 100%;
+      padding-top: 45px;
+      padding-left: 40px;
+      color: white;
+    }
+    .block-2 .f-content h1{
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 0px;
+      white-space: nowrap;
+    }
+    .block-2 .f-content a{
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 30px;
+      padding-bottom: 10px;
+      color: white;
+      transition: 0.4s;
+    }
+
+    .block-2 .f-content a:hover{
+      color: #FDAF2A;
+    }
+
+    .footer_contact{
+      width: 50%;
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+    .footer_contact a{
+      margin: 0px 0px 0px 0px;
+      line-height: 28px;
+      text-decoration: none;
+      color: black;
+      transition: 0.4s;
+    }
+
+    .footer_contact p{
+      margin: 0px 0px 10px 0px;
+      line-height: 28px;
+      text-decoration: none;
+      color: black;
+      transition: 0.4s;
+    }
+
+    .footer_contact a:hover{
+      color: #95C11F;
+    }
+
+    .social_icon{
+      transition: 0.4s;
+      width: 55px;
+      height: 55px;
+      opacity: 0.75;
+    }
+
+    .block-2 .f-content a:hover > .social_icon{
+      opacity: 1.0;
+      transform: scale(1.06);
     }
 
     @media(max-width: 1600px) {
@@ -643,7 +719,14 @@
        .guide_button{
          font-size: 1.4vw;
        }
-    }
+       .block-2 .f-content h1{
+        font-size: 16px;
+      }
+       .block-2 .f-content a{
+        line-height: 20px;
+        font-size: 16px;
+        white-space: nowrap;
+      }
 
     @media(max-width: 1024px) {
       .navbar_ruton {
@@ -763,11 +846,30 @@
      .scaler .Slides{
        display: block;
      }
+     footer{
+       display: block;
+       padding-left: 0px;
+     }
+     footer .title{
+      top: -45%;
+     }
+     footer .block-1{
+       padding-left: 2vw;
+     }
+     footer .block-2{
+       padding-bottom: 20px;
+     }
+     .block-2 .f-content{
+      padding-left: 2vw;
+     }
+     .block-2 .f-content a{
+      white-space: normal;
+     }
     }
 
     @media(max-width:500px) {
       .navbar_logo img {
-        width: 100%;
+        width: 70%;
       }
 
       .call_number{
@@ -879,6 +981,39 @@
       }
       .guide_button{
         font-size: 28px;
+      }
+      .block-1 .f-content{
+        display: block;
+      }
+      .footer_contact{
+        font-size: 18px;
+      }
+
+      footer .title{
+        position: static;
+        margin-bottom: 0px;
+      }
+
+      .block-2 .f-content a{
+        font-size: 15px;
+      }
+
+      footer .navbar_logo{
+        width: 85%;
+      }
+
+      footer .navbar_logo img{
+        width: 60%;
+      }
+      footer .mob_size-12{
+        display: flex;
+        align-items: center;
+      }
+      .social_icon{
+        padding-left: 12px;
+      }
+      .navbar_section{
+        padding-top: 5px;
       }
     }
     @media(max-width:350px){

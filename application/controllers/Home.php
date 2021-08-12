@@ -23,7 +23,34 @@ class Home extends CI_Controller
 	public function index()
 	{
 		$data = loadDefaultDataFront();
-		$data['cp'] = $this->uri->segment(1);
+		$data['cp'] = "main";
 		echo loadViewsFront('index', $data);
+	}
+
+	public function offers()
+	{
+		$data = loadDefaultDataFront();
+		$data['cp'] = $this->uri->segment(1);
+		echo loadViewsFront('offer', $data);
+	}
+
+	public function self()
+	{
+		$data = loadDefaultDataFront();
+		$data['cp'] = $this->uri->segment(1);
+		echo loadViewsFront('self', $data);
+	}
+	public function blog()
+	{
+		$data = loadDefaultDataFront();
+		$data['cp'] = $this->uri->segment(1);
+		echo loadViewsFront('blog', $data);
+	}
+
+	public function contact()
+	{
+		$data = loadDefaultDataFront();
+		$data['cp'] = $this->uri->segment(1);
+		echo loadViewsFront('contact', $data);
 	}
 }

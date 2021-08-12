@@ -1,4 +1,4 @@
-<body>
+<body id="body">
   <script type="text/javascript">
     function changeLang(lang) {
       $.ajax({
@@ -34,17 +34,17 @@
   </style>
   <header>
     <div class="navbar_ruton">
-      <div class="navbar_section flex_align_c flex_mob"><span class="navbar_logo"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></span>
+      <div class="navbar_section flex_align_c flex_mob"><a href="<?= base_url(); ?>" class="navbar_logo"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></a>
         <button class="navbar_toggler tab_block" onclick="toggle_nav()" type="button">
           <img class="navbar_bars" src="<?= base_url('assets/front/img/bars-solid.svg') ?>">
         </button>
       </div>
       <div class="navbar_section flex_align_c">
         <div class="navbar_list flex_c" id="navbar">
-          <p><a href="#" class="subpage_link">Fotowoltaika</a><span class="subpage_line"></span></p>
-          <p><a href="#" class="subpage_link">Samodzielny Montaż</a><span class="subpage_line"></span></p>
-          <p><a href="#" class="subpage_link">Poradnik</a><span class="subpage_line"></span></p>
-          <p><a href="#" class="subpage_link">Kontakt</a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('oferty') ?>" class="subpage_link<?php if ($cp == 'oferty') echo ' active'; ?>">Fotowoltaika</a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('montaz') ?>" class="subpage_link<?php if ($cp == 'montaz') echo ' active'; ?>">Samodzielny Montaż</a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('poradnik') ?>" class="subpage_link<?php if ($cp == 'poradnik') echo ' active'; ?>">Poradnik</a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('kontakt') ?>" class="subpage_link<?php if ($cp == 'kontakt') echo ' active'; ?>">Kontakt</a><span class="subpage_line"></span></p>
         </div>
       </div>
     </div>

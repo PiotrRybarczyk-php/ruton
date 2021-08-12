@@ -6,18 +6,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
 
-$route['onas'] = 'home/about';
 $route['oferty'] = 'home/offers';
-$route['oferta_1'] = 'home/offer_1';
-$route['oferta_2'] = 'home/offer_2';
-$route['oferta_3'] = 'home/offer_3';
-$route['realizacje'] = 'home/reals';
-$route['projekty'] = 'home/projects';
-$route['praca'] = 'home/work';
+$route['montaz'] = 'home/self';
+$route['poradnik'] = 'home/blog';
 $route['kontakt'] = 'home/contact';
-$route['aktualnosci'] = 'home/blog';
 $route['wpis/(.*)/(.+)'] = 'home/single_article/$1/$2';
-$route['kontakt'] = 'home/contact';
 //SCIAGA
 // $route['odziez/(.*)/(.+)'] = 'home/odziez/$1/$2';
 // $route['obuwie/(.*)/(.+)'] = 'home/obuwie/$1/$2';

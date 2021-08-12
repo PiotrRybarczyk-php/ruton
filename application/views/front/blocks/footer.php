@@ -3,7 +3,7 @@
     <div class="block-1">
         <h1 class="title"><span class="top_line"></span>kontakt</h1>
         <div class="f-content">
-            <span class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></span>
+            <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></a>
             <div class="footer_contact">
                 <p>ulica, kod miasto</p>
                 <p>tel. <a href="#">+48 500 500 500</a></p>
@@ -42,17 +42,39 @@
 <?php if ($cp == 'kontakt') : ?><script src="https://www.google.com/recaptcha/api.js?render=<?= $settings->captcha ?>"></script> <?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 
+<?php
+$slider = 0;
+if ($cp == 'main') {
+    $slider = 2;
+} elseif ($cp == 'oferty') {
+    $slider = 1;
+}
+?>
+
 <script>
     var navbar_on = false;
 
+    function set_size() {
+        if (window.screen.width > 1024) {
+            var body = document.getElementById('body');
+            var h = body.getBoundingClientRect().height;
+            var m = (h * 1.0) / 0.75;
+            var value = Math.round(-1 * (m - h));
+            var text = value.toString() + "px";
+            body.style.marginBottom = text;
+        }
+
+    }
     window.onload = function() {
         //put here all library functions
-        quavosh_slider(2);
+        quavosh_slider(<?= $slider; ?>);
         qanim();
+        set_size();
     };
 
     function reset_bar() {
         document.getElementById('navbar').style.removeProperty('height');
+
     }
     window.onresize = reset_bar;
     grecaptcha.ready(function() {

@@ -1,4 +1,16 @@
 
+    
+    /*.main-page{
+      transform:scale(0.75);
+      margin-top: -1017px;
+      margin-bottom: -1017px;
+    }*/
+
+    body{
+      transform: scale(0.75);
+      transform-origin: 50% 0;
+    }
+
     section{
       position: relative;
     }
@@ -52,6 +64,11 @@
 
     .navbar_list p:hover>.subpage_link {
       color: #2B2171;
+    }
+
+    .active{
+      color: #2B2171 !important;
+      text-decoration: underline !important;
     }
 
     .navbar_list p:hover>.subpage_line {
@@ -419,6 +436,11 @@
         color: #95C11F;
       }
 
+      h2 i {
+        font-style: normal;
+        color: #95C11F;
+      }
+
     .title_offset{
       position: absolute;
       top: 1%;
@@ -687,6 +709,224 @@
       transform: scale(1.06);
     }
 
+    .banner{
+      width: 100%;
+      height: 238px;
+      background-position: left 30%;
+      background-size: 75%;
+      background-repeat: repeat-x;
+      border-top: 1px solid white;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    .banner_title{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width:100%;
+      font-size: 48px;
+      text-transform: uppercase;
+      top: 20%;
+      padding-right: 1vw;
+    }
+
+    .offer_desc{
+      max-width:1438px;
+      min-height: 118px;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .offer_desc p{
+      margin: 12px 0px 12px 0px;
+    }
+
+    .offer_block-title{
+      width: 100%;
+      height: 200px;
+    }
+
+    .offer_block-title h1{
+      position: absolute;
+      margin: 0px 0px 0px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+      max-width: 331px;
+      top: 40px;
+      left: -150px;
+    }
+
+    .offer_block-title h2{
+      position: absolute;
+      margin: 0px 0px 0px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+      max-width: 331px;
+      top: 40px;
+      right: -150px;
+    }
+
+    .offer_pic{
+     width: 100%;
+     max-width: 558px;
+     min-height: 515px;
+     background-position: center;
+     background-size: cover;
+    }
+
+    .btn_offer{
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 309px;
+      min-height: 91px;
+      background-color: #FDAF2A;
+      transition: 0.4s;
+      cursor: pointer;
+      color: white;
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .btn_offer:hover{
+      background-color: #95C11F;
+    }
+
+    .offer_right{
+      right: -50%;
+    }
+
+    .offer_left{
+      left: -50%;
+    }
+
+    .self_block-title{
+      width: 100%;
+      height: 200px;
+    }
+
+    .self_block-title h1{
+      margin: 55px 0px 0px 0px;
+      text-align: right;
+      font-size: 60px;
+      text-transform: uppercase;
+      max-width: 390px;
+      top: 40px;
+      left: -150px;
+    }
+
+    .self_pad-l{
+      padding-left:5vw;
+    }
+
+    .self_pic{
+      width: 100%;
+      margin-top: 50px;
+      max-width: 875px;
+      min-height: 353px;
+      background-position: center;
+      background-size: cover;
+     }
+     .self_pad-r{
+      padding-left:5vw;
+     }
+     .green_square{
+       background-color: #95C11F;
+       display: block;
+       width: 100%;
+       height: 40px;
+     }
+
+     .btn_self{
+      margin-top: 80px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 309px;
+      min-height: 61px;
+      background-color: #FDAF2A;
+      transition: 0.4s;
+      cursor: pointer;
+      color: white;
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .btn_self:hover{
+      background-color: #95C11F;
+    }
+
+    .blog_block-title{
+      width: 100%;
+      height: 200px;
+    }
+
+    .blog_block-title h1{
+      position: absolute;
+      margin: 0px 0px 0px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+      top: 40px;
+      left: -150px;
+    }
+
+    .blog_block-title h2{
+      position: absolute;
+      margin: 0px 0px 0px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+      max-width: 420px;
+      top: 40px;
+      right: -150px;
+    }
+
+    .btn_blog{
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 309px;
+      min-height: 61px;
+      background-color: #FDAF2A;
+      transition: 0.4s;
+      cursor: pointer;
+      color: white;
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .btn_blog:hover{
+      background-color: #95C11F;
+    }
+
+    .contact_desc{
+      max-width:588px;
+      min-height: 118px;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .contact_header{
+      width: 100%;
+      max-width: 880px;
+    }
+
+    .contact_form{
+      width: 100%;
+      max-width: 1208px;
+      min-height: 636px;
+      background-color: #95C11F;
+    }
+
     @media(max-width: 1600px) {
       .fader .dot_box {
         left: 28% !important;
@@ -732,6 +972,27 @@
       .navbar_ruton {
         display: block;
         min-height: unset;
+      }
+
+      body{
+        transform: scale(1.0);
+        transform-origin: 0 0;
+      }
+
+      .offer_block-title h1{
+        left: 0px;
+      }
+
+      .offer_block-title h2{
+        right: 0px;
+      }
+
+      .offer_right{
+        right: 0%;
+      }
+
+      .offer_left{
+        left: 0%;
       }
 
       .title_offset{
@@ -865,11 +1126,53 @@
      .block-2 .f-content a{
       white-space: normal;
      }
+     .tab_pad{
+       padding-left: 3vw;
+       padding-right: 3vw;
+     }
+     .blog_block-title h1{
+      position: relative;
+      left: 0px;
     }
+
+    .blog_block-title h2{
+      position: absolute;
+      margin: 0px 0px 0px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+      top: 40px;
+      right: 0px;
+    }
+    
 
     @media(max-width:500px) {
       .navbar_logo img {
         width: 70%;
+      }
+
+      .contact_header{
+        font-size: 38px;
+      }
+
+      .blog_block-title{
+        height: 220px;
+      }
+
+      .blog_block-title h1{
+        font-size: 24px;
+      }
+
+      .blog_block-title h2{
+        font-size: 24px;
+      }
+
+      .banner_title{
+        font-size: 32px;
+        padding-left: 3vw;
+      }
+
+      .offer_pic{
+        min-height: 320px;
       }
 
       .call_number{
@@ -1015,9 +1318,27 @@
       .navbar_section{
         padding-top: 5px;
       }
+      .self_block-title h1{
+        font-size: 40px;
+      }
+      .self_pad-l{
+        padding-left: 0px;
+      }
+      .self_pad-r{
+        padding-left: 0px;
+      }
+      .mask{
+        position: static;
+      }
+      .offer_desc{
+        font-size: 15px;
+      }
     }
     @media(max-width:350px){
       .scaler{
         min-height: 1124px;
+      }
+      .banner_title{
+        font-size: 27px;
       }
     }

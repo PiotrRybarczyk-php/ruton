@@ -48,6 +48,8 @@ if ($cp == 'main') {
     $slider = 2;
 } elseif ($cp == 'oferty') {
     $slider = 1;
+} elseif ($cp == 'poradnik') {
+    $slider = 1;
 }
 ?>
 
@@ -67,9 +69,9 @@ if ($cp == 'main') {
     }
     window.onload = function() {
         //put here all library functions
-        quavosh_slider(<?= $slider; ?>);
         qanim();
         set_size();
+        quavosh_slider(<?= $slider; ?>);
     };
 
     function reset_bar() {

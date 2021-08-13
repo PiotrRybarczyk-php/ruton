@@ -53,4 +53,11 @@ class Home extends CI_Controller
 		$data['cp'] = $this->uri->segment(1);
 		echo loadViewsFront('contact', $data);
 	}
+
+	public function single_article($id, $slug)
+	{
+		$data = loadDefaultDataFront();
+		$data['cp'] = 'poradnik';
+		echo loadViewsFront('single_article', $data);
+	}
 }

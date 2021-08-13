@@ -95,8 +95,13 @@
 .active, .dot:hover {
   opacity: 1.0 !important;
 }
+@media(max-width: 1024px){
+  .prev, .next {
+    padding: 6px 6px 6px 6px;
+  }
+}
 
-@media(max-width:1024px){
+@media(max-width:500px){
   .prev, .next {
     display: none;
   }

@@ -975,8 +975,7 @@
       }
 
       body{
-        transform: scale(1.0);
-        transform-origin: 0 0;
+        transform: none
       }
 
       .offer_block-title h1{
@@ -1133,17 +1132,16 @@
      .blog_block-title h1{
       position: relative;
       left: 0px;
-    }
-
-    .blog_block-title h2{
+     }
+      .blog_block-title h2{
       position: absolute;
       margin: 0px 0px 0px 0px;
       font-size: 30px;
       text-transform: uppercase;
       top: 40px;
       right: 0px;
-    }
-    
+     }
+   }
 
     @media(max-width:500px) {
       .navbar_logo img {

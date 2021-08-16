@@ -172,11 +172,13 @@ function S_Fader(n, id) {
     if (n < 1) { slideIndex[id] = slide_l[id] }
     for (i = 0; i < slide_l[id]; i++) {
         sliders[id].querySelectorAll('.Slides')[i].style.opacity = "0%";
+        sliders[id].querySelectorAll('.Slides')[i].style.zIndex = "-1";
         sliders[id].querySelectorAll('.Slides')[i].style.position = "absolute";
         dots[i].className = dots[i].className.replace(" active", "");
     }
     var current = (slide_l[id] + slideIndex[id] - 1) % slide_l[id];
     sliders[id].querySelectorAll('.Slides')[current].style.opacity = "100%";
+    sliders[id].querySelectorAll('.Slides')[current].style.zIndex = "1";
     sliders[id].querySelectorAll('.Slides')[current].style.position = "relative";
     dots[current].className += " active";
 }

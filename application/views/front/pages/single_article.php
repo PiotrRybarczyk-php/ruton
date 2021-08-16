@@ -53,7 +53,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding mob_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/hold.jpg') ?>)"></div>
@@ -66,7 +66,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding tab_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg') ?>)"></div>
@@ -97,7 +97,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding mob_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/panel-touch.jpg') ?>)"></div>
@@ -110,7 +110,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding tab_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/hold.jpg') ?>)"></div>
@@ -141,7 +141,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding mob_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg') ?>)"></div>
@@ -154,7 +154,7 @@
                             <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
                         </div>
                     </div>
-                    <div class="flex_box flex_c md_padding">
+                    <div class="flex_box flex_c md_padding tab_hide">
                         <div class="block_normal" style="max-width:404px;">
                             <span class="green_square" style="max-width:183px;"></span>
                             <div class="art_pic-2" style="background-image:url(<?= base_url('assets/front/img/panel-touch.jpg') ?>)"></div>

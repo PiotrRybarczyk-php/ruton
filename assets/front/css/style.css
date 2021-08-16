@@ -17,7 +17,7 @@
 
     .navbar_ruton {
       width: 100%;
-      min-height: 141px;
+      min-height: 120px;
       display: flex;
       position: fixed;
       padding-left: 9vw;
@@ -29,13 +29,14 @@
     .navbar_section {
       display: flex;
       width: 50%;
-      min-height: 141px;
+      min-height: 120px;
       background-color: white;
     }
 
     .navbar_spacer {
       width: 100%;
-      height: 160px;
+      /*height: 140px;*/
+      height: 100px;
     }
 
     .navbar_list {
@@ -1153,6 +1154,10 @@
         display: block;
         min-height: unset;
         box-shadow: 0px 10px 13px -15px #000000;
+      }
+
+      .navbar_spacer {
+        height: 140px;
       }
 
       body{

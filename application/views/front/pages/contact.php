@@ -29,27 +29,19 @@
             <input class="form_input" type="text" name="3" placeholder="Telefon kontaktowy">
             <input class="form_input" type="text" name="4" placeholder="Adres e-mailowy">
             <textarea required class="form_textarea" rows="7" placeholder="Treść pytania..." name="message"></textarea>
-            <div class="block_normal">
-                <div class="flex_box flex_c"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
-                <label for="rodo1">
-                </label>
-                <p class="form_rodo"><?= $settings->rodo; ?></p>
-            </div>
-            <div class="block_normal">
-                <div class="flex_box flex_c"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
-                <label for="rodo2">
-                </label>
-                <p class="form_rodo"><?= $settings->rodo_tel; ?></p>
-            </div>
-            <div class="block_normal">
-                <div class="flex_box flex_c"><input type="checkbox" class="form_rodo" name="rodo3" id="rodo3"></div>
-                <label for="rodo3">
-                </label>
-                <p class="form_rodo"><?= $settings->rodo_mail; ?></p>
+            <div class="rodo_box">
+                <div class="flex_box rodo_resize">
+                    <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
+                    <p class="form_rodo"><a href="#">Polityka Prywatności</a></p>
+                </div>
+                <div class="flex_box flex_r rodo_resize">
+                    <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
+                    <p class="form_rodo"><a href="#">Zgoda na kontakt tel. i mail'owy</a></p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="flex_box flex_c"><button class="btn_form">Wyślij Formularz</button></div>
+    <div class="flex_box flex_c sep_top-s"><button class="btn_form">Wyślij Formularz</button></div>
 </section>
 <section class="sep_top-xl">
     <h1 class="ruton_title"><i>Wsparcie</i><span class="top_line" style="left: 54%;"></span></h1>

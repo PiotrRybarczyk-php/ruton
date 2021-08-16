@@ -19,9 +19,9 @@
             </div>
         </div>
 
-        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/slider/slider_img.jpg'); ?>);">
+        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg'); ?>);">
             <div class="mask">
-                <h1 class="s_title">fotowoltaika</h1>
+                <h1 class="s_title">ruton</h1>
                 <div class="white-bg"></div>
             </div>
             <div class="s_content">
@@ -37,9 +37,9 @@
             </div>
         </div>
 
-        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/slider/slider_img.jpg'); ?>);">
+        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/key.jpg'); ?>);">
             <div class="mask">
-                <h1 class="s_title">fotowoltaika</h1>
+                <h1 class="s_title">rozwiązania</h1>
                 <div class="white-bg"></div>
             </div>
             <div class="s_content">

@@ -1,9 +1,11 @@
-<div class="banner" style="background-image:url(<?= base_url('assets/front/img/self.jpg'); ?>);">
+<div class="banner">
+    <div class="banner_bc" style="background-image:url(<?= base_url('assets/front/img/self.jpg'); ?>);"></div>
     <div class="mask">
-        <h1 class="banner_title">fotowoltaika do samodzielnego montażu</h1>
+        <h1 class="banner_title" style="padding-right:108px;">fotowoltaika do samodzielnego montażu</h1>
         <div class="white-bg"></div>
     </div>
 </div>
+<div class="banner_cover"></div>
 <div class="flex_box flex_c sep_top-l sep_bot-xl">
     <div class="offer_desc tab_pad">
         <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum. Nam pellentesque tincidunt, risus tortor, fermentum augue. Sed eros. Sed aliquet ultrices posuere, odio.</p>

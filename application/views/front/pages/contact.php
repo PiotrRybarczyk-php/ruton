@@ -1,6 +1,7 @@
-<div class="banner" style="background-image:url(<?= base_url('assets/front/img/texture.jpg'); ?>);">
+<div class="banner">
+    <div class="banner_bc" style="background-image:url(<?= base_url('assets/front/img/texture.jpg'); ?>);"></div>
     <div class="mask">
-        <h1 class="banner_title">kontakt</h1>
+        <h1 class="banner_title" style="padding-right:15px;">kontakt</h1>
         <div class="white-bg"></div>
     </div>
 </div>

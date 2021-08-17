@@ -106,7 +106,7 @@
                 <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
             </div>
         </div>
-        <div class="block_normal ruton_tile">
+        <div class="block_normal ruton_tile sep_bot-l">
             <span class="bc_square" style="width:83%;height:100%;"></span>
             <span class="tile_circle">
                 <img class="circle_icon" src="<?= base_url('assets/front/icons/plug.svg'); ?>">
@@ -139,7 +139,7 @@
                 <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
             </div>
         </div>
-        <div class="block_normal ruton_tile">
+        <div class="block_normal ruton_tile sep_bot-l">
             <span class="bc_square" style="width:83%;height:100%;"></span>
             <span class="tile_circle">
                 <img class="circle_icon" src="<?= base_url('assets/front/icons/plug.svg'); ?>">

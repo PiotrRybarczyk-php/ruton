@@ -25,7 +25,7 @@
             </div>
             <div class="block_normal">
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg') ?>)"></div>
-                <div class="flex_box"><a href="<?= base_url('wpis/1/dlaczego'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
+                <div class="flex_box"><a href="<?= base_url('wpis/1/dlaczego'); ?>" class="btn_blog">czytaj więcej</a><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
         <div class="grid-2 gtab-1 tab_pad" style="max-width:1110px">
             <div class="block_normal">
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/hold.jpg') ?>)"></div>
-                <div class="flex_box"><span class="green_square" style="max-width:183px;"></span><i class="tab_hide" style="width:20%;"></i><button class="btn_blog">czytaj więcej</button></div>
+                <div class="flex_box"><span class="green_square" style="max-width:183px;"></span><i class="tab_hide" style="width:20%;"></i><a href="<?= base_url('wpis/1/dlaczego'); ?>" class="btn_blog">czytaj więcej</a></div>
             </div>
             <div class="block_normal">
                 <div class="blog_block-title">
@@ -65,7 +65,7 @@
             </div>
             <div class="block_normal">
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/hold.jpg') ?>)"></div>
-                <div class="flex_box"><button class="btn_blog">czytaj więcej</button><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
+                <div class="flex_box"><a href="<?= base_url('wpis/1/dlaczego'); ?>" class="btn_blog">czytaj więcej</a><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
             </div>
         </div>
     </div>

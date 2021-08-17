@@ -26,7 +26,7 @@
             <div class="block_normal">
                 <span class="bc_square offer_right" style="max-width:491px;height:340px;width:100%;"></span>
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg') ?>)"></div>
-                <button class="btn_offer">kontakt</button>
+                <button class="btn_self">kontakt</button>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
             <div class="block_normal">
                 <span class="bc_square offer_left" style="max-width:491px;height:340px;width:100%;"></span>
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/agri.jpg') ?>)"></div>
-                <button class="btn_offer">kontakt</button>
+                <button class="btn_self">kontakt</button>
             </div>
             <div class="block_normal">
                 <span class="bc_square" style="max-width:491px;height:340px;width:100%;"></span>
@@ -68,7 +68,7 @@
             <div class="block_normal">
                 <span class="bc_square offer_right" style="max-width:491px;height:340px;width:100%;"></span>
                 <div class="offer_pic" style="background-image:url(<?= base_url('assets/front/img/agri.jpg') ?>)"></div>
-                <button class="btn_offer">kontakt</button>
+                <button class="btn_self">kontakt</button>
             </div>
         </div>
     </div>

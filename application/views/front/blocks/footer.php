@@ -5,7 +5,10 @@
         <div class="f-content">
             <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></a>
             <div class="footer_contact">
-                <p>ulica, kod miasto</p>
+                <desc>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</desc>
+                <p>59-200 Legnica</p>
+                <p>ul. Fabryczna 22</p>
+                <p>NIP: 123-123-12-12</p>
                 <p>tel. <a href="#">+48 500 500 500</a></p>
                 <p>email. <a href="#">test@test.com</a></p>
             </div>

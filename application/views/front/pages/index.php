@@ -67,7 +67,7 @@
 </div>
 <section>
     <div class="temp_flex main_padding sep_top-xl">
-        <div class="box_1" style="background-image:url(<?= base_url('assets/front/img/manager.jpg') ?>);"></div>
+        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('assets/front/img/manager.jpg') ?>);"></div>
         <div class="box_2">
             <span class="bc_square" style="width:400px;height:360px;top:12%;left:-1%"></span>
             <span class="bc_square mob_hide" style="width:74px;height:74px;top:-1%;left:385px"></span>
@@ -303,7 +303,7 @@
                 <p>Z Naszego</p>
                 <p><i>Poradnika</i></p>
             </div>
-            <div class="guide_img" style="background-image:url(<?= base_url('assets/front/img/panel_alpha.png'); ?>);">
+            <div class="guide_img mob_hide" style="background-image:url(<?= base_url('assets/front/img/panel_alpha.png'); ?>);">
 
             </div>
         </div>

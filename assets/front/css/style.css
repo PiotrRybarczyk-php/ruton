@@ -346,7 +346,7 @@
       }
 
     .ruton_tile {
-      min-height: 340px;
+      height: 400px;
       margin-bottom: 42px;
     }
 
@@ -735,13 +735,11 @@
     }
 
     .banner_title{
-      position: absolute;
       display: flex;
       justify-content: center;
       width:100%;
       font-size: 48px;
       text-transform: uppercase;
-      top: 60px;
     }
 
     .offer_desc{
@@ -1110,6 +1108,10 @@
       width: 50% !important;
     }
 
+    .set_height{
+      height: 237px;
+    }
+
     @media(max-width: 1600px) {
       .fader .dot_box {
         left: 28% !important;
@@ -1311,7 +1313,8 @@
        padding-left: 0px;
      }
      footer .title{
-      top: -45%;
+      top: -38%;
+      font-size: 6.2vw;
      }
      footer .block-1{
        max-width: 920px;
@@ -1344,14 +1347,17 @@
      }
      .art_pad-l{
       padding-left:5vw;
-    }
-    .slider_padding{
+      }
+      .slider_padding{
       padding: 0px 65px 0px 65px;
-    }
-    .footer_contact{
+      }
+      .footer_contact{
       width: 85%;
+      }
+      .content h1 {
+        font-size: 27px;
+      }
     }
-   }
 
     @media(max-width:500px) {
       .navbar_logo img {
@@ -1385,8 +1391,15 @@
         background-position: unset;
       }
 
+      .info_text{
+        align-items: center;
+      }
+
+      .info_text p{
+        font-size: 8vw;
+      }
+
       .banner_title{
-        top: unset;
         font-size: 32px;
         padding-top: 30px;
         padding-right: 0px !important;
@@ -1412,7 +1425,11 @@
         height:166px;
         top: unset;
         left: unset;
-     }
+      }
+      
+      .content h1 {
+        font-size: 24px;
+      }
 
       .content p {
         font-size: 16px;
@@ -1516,6 +1533,7 @@
 
       footer .title{
         position: static;
+        margin-top: 5px;
         margin-bottom: 0px;
       }
 
@@ -1525,6 +1543,7 @@
 
       footer .navbar_logo{
         width: 85%;
+        margin-bottom: 12px;
       }
 
       footer .navbar_logo img{
@@ -1582,6 +1601,19 @@
       }
       .rodo_resize{
         width: 100% !important;
+      }
+      .set_height{
+        height: 200px;
+      }
+      .sep_top-xl{
+        padding-top: 40px;
+      }
+      .sep_bot-xl{
+        padding-bottom: 40px;
+      }
+      .desc_4{
+        padding-left: 6px;
+        padding-right: 6px;
       }
     }
     @media(max-width:350px){

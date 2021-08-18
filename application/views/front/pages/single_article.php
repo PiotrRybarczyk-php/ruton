@@ -1,7 +1,9 @@
 <div class="banner">
     <div class="banner_bc" style="background-image:url(<?= base_url('assets/front/img/article.jpg'); ?>);"></div>
     <div class="mask">
-        <h1 class="banner_title">Tytuł Artykułu</h1>
+        <div class="flex_box flex_align_c set_height">
+            <h1 class="banner_title">Tytuł Artykułu</h1>
+        </div>
         <div class="white-bg"></div>
     </div>
 </div>
@@ -35,7 +37,7 @@
         <div class="art_pic-2 just_m mob_size-2" style="background-image:url(<?= base_url('assets/front/img/panel-touch.jpg') ?>)"></div>
     </div>
 </div>
-<div class="flex_box flex_c main_padding sep_top-xl sep_bot-xl"><a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">wróc</button></a></div>
+<div class="flex_box flex_c main_padding sep_top-xl sep_bot-xl"><a href="<?= base_url('poradnik'); ?>" class="btn_blog">wróc</a></div>
 <section class="sep_top-xl">
     <div class="flex_box">
         <div class="fader" id="slider-1">
@@ -51,7 +53,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding mob_hide">
@@ -64,7 +66,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding tab_hide">
@@ -77,7 +79,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +97,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding mob_hide">
@@ -108,7 +110,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding tab_hide">
@@ -121,7 +123,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +141,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding mob_hide">
@@ -152,7 +154,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                     <div class="flex_box flex_c md_padding tab_hide">
@@ -165,7 +167,7 @@
                             <div class="offer_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin est a sapien posuere, eget malesuada nisl tincidunt. Fusce eget sodales lectus. Nam sodales mollis odio, non venenatis dui maximus ac. In id tellus sed quam scelerisque blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium consequat enim sed pellentesque. Vivamus varius augue eget ligula venenatis congue. Pellentesque id sem iaculis, efficitur felis nec, egestas nunc. Nulla eleifend molestie tellus et mollis.</p>
                             </div>
-                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog"><button class="btn_blog">czytaj więcej</button></a>
+                            <a href="<?= base_url('poradnik'); ?>" class="btn_blog">czytaj więcej</a>
                         </div>
                     </div>
                 </div>

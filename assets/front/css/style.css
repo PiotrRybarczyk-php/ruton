@@ -917,6 +917,7 @@
       cursor: pointer;
       color: white;
       text-transform: uppercase;
+      text-align: center;
       font-size: 28px;
       font-weight: 600;
     }

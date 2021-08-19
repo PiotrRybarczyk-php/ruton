@@ -122,9 +122,11 @@
 
     .btn_ruton {
       min-width: 260px;
-      max-width: 282px;
       height: 43px;
       text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
       font-weight: 500;
       font-size: 18px;
       padding: 0px 35px 0px 35px;
@@ -138,8 +140,7 @@
 
     .btn_ruton:hover {
       color: white;
-      padding: 0px 42px 0px 42px;
-      margin-left: -7px;
+      min-width: 282px;
     }
 
     .mask {
@@ -216,6 +217,7 @@
     .absolute_box {
       margin: auto;
       padding-left: 3vw;
+      min-width: 530px;
     }
 
     .temp_flex {
@@ -898,7 +900,7 @@
       margin: 0px 0px 0px 0px;
       font-size: 30px;
       text-transform: uppercase;
-      max-width: 420px;
+      max-width: 496px;
       top: 40px;
       right: -150px;
     }
@@ -1048,15 +1050,27 @@
     .art_block-title{
       position: relative;
       width: 100%;
-      height: 200px;
+      min-height: 200px;
     }
 
     .art_block-title h1{
       margin: 55px 0px 0px 0px;
+      padding-bottom: 100px;
       text-align: right;
       font-size: 60px;
       text-transform: uppercase;
-      max-width: 433px;
+      max-width: 1200px;
+      top: 40px;
+      left: -150px;
+    }
+
+    .number_article{
+      position: absolute;
+      right: -10px;
+      margin: 0px 0px 0px 0px;
+      text-align: right;
+      font-size: 60px;
+      text-transform: uppercase;
       top: 40px;
       left: -150px;
     }
@@ -1160,6 +1174,14 @@
         padding-left: 6px;
         padding-right: 6px;
       }
+      .art_block-title h1{
+        margin: 0px 0px 80px 0px;
+        text-align: left;
+        top: 0px;
+      }
+      .art_pad-l{
+        padding-left: 2vw;
+      }
     }
     @media(max-width: 1024px) {
       .navbar_ruton {
@@ -1241,6 +1263,10 @@
 
       .info_text p{
         font-size: 28px;
+      }
+
+      .absolute_box{
+        min-width: 460px;
       }
 
       .absolute_box div {
@@ -1472,7 +1498,12 @@
       }
 
       .absolute_box {
-        padding-left: 17vw;
+        min-width: unset;
+        padding-left: 10vw;
+      }
+
+      .absolute_box div{
+        font-size: 6vw;
       }
 
       .fader .dot_box {
@@ -1570,7 +1601,16 @@
       }
 
       .art_block-title h1{
-        font-size: 40px;
+        font-size: 31px;
+        padding-bottom: 2px;
+      }
+      .number_article{
+        position: relative;
+        right: -10px;
+        font-size: 37px;
+        top: 0px;
+        left: 0px;
+        text-align: left;
       }
       .self_pad-l{
         padding-left: 0px;

@@ -1,61 +1,26 @@
 <div class="flex_box sep_bot-xl">
     <div class="fader" id="slider-1">
-
-        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/slider/slider_img.jpg'); ?>);">
-            <div class="mask">
-                <h1 class="s_title">fotowoltaika</h1>
-                <div class="white-bg"></div>
-            </div>
-            <div class="s_content">
-                <div class="s_box"></div>
-                <div class="s_box">
-                    <span class="bc_square" style="width:400px;height:360px;top:48%;left:-13%"></span>
-                    <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
-                    <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
-                        <div class="sep_top-m">ROZWIĄZANIE CORAZ PRAKTYCZNIEJSZE</div>
-                        <div class="flex_box sep_top-l"><button class="btn_ruton">ZAPYTAJ O WYCENĘ</button></div>
+        <?php foreach ($slider as $item) : ?>
+            <?php if ($item->active == 1) : ?>
+                <div class="Slides" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);">
+                    <div class="mask">
+                        <h1 class="s_title"><?= $item->title; ?></h1>
+                        <div class="white-bg"></div>
+                    </div>
+                    <div class="s_content">
+                        <div class="s_box"></div>
+                        <div class="s_box">
+                            <span class="bc_square" style="width:400px;height:360px;top:48%;left:-13%"></span>
+                            <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
+                            <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
+                                <div class="sep_top-m" style="text-transform:uppercase;min-height:135px;"><?= $item->subtitle; ?></div>
+                                <div class="flex_box flex_c sep_top-l" style="max-width:320px;"><a href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/house-row.jpg'); ?>);">
-            <div class="mask">
-                <h1 class="s_title">ruton</h1>
-                <div class="white-bg"></div>
-            </div>
-            <div class="s_content">
-                <div class="s_box"></div>
-                <div class="s_box">
-                    <span class="bc_square" style="width:400px;height:360px;top:48%;left:-13%"></span>
-                    <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
-                    <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
-                        <div class="sep_top-m">ROZWIĄZANIE CORAZ PRAKTYCZNIEJSZE</div>
-                        <div class="flex_box sep_top-l"><button class="btn_ruton">ZAPYTAJ O WYCENĘ</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="Slides" style="background-image:url(<?= base_url('assets/front/img/key.jpg'); ?>);">
-            <div class="mask">
-                <h1 class="s_title">rozwiązania</h1>
-                <div class="white-bg"></div>
-            </div>
-            <div class="s_content">
-                <div class="s_box"></div>
-                <div class="s_box">
-                    <span class="bc_square" style="width:400px;height:360px;top:48%;left:-13%"></span>
-                    <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
-                    <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
-                        <div class="sep_top-m">ROZWIĄZANIE CORAZ PRAKTYCZNIEJSZE</div>
-                        <div class="flex_box sep_top-l"><button class="btn_ruton">ZAPYTAJ O WYCENĘ</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+            <?php endif; ?>
+        <?php endforeach; ?>
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
 
@@ -67,89 +32,35 @@
 </div>
 <section>
     <div class="temp_flex main_padding sep_top-xl">
-        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('assets/front/img/manager.jpg') ?>);"></div>
+        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('uploads/') . $s1->photo; ?>);"></div>
         <div class="box_2">
             <span class="bc_square" style="width:400px;height:360px;top:12%;left:-1%"></span>
             <span class="bc_square mob_hide" style="width:74px;height:74px;top:-1%;left:385px"></span>
             <div class="block_normal desk_pad qa_fade">
                 <span class="top_line"></span>
                 <div class="sep_top-s">
-                    <p>Co możemy</p>
-                    <p><i>dla ciebie</i> zrobić?</p>
+                    <?= $s1->title; ?>
                     <div class="desc_1 sep_top-m">
-                        <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum. Nam pellentesque tincidunt, risus tortor, fermentum augue. Sed eros. Sed aliquet ultrices posuere, odio.</p>
+                        <?= $s1->description; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="grid-3 gtab-2 gmob-1 sep_top-xl main_padding">
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/tool.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA GOSPODARSTW DOMOWYCH</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
+        <?php foreach ($tiles1 as $item) : ?>
+            <div class="block_normal ruton_tile sep_bot-l">
+                <span class="bc_square" style="width:83%;height:100%;"></span>
+                <span class="tile_circle">
+                    <img class="circle_icon" src="<?= base_url('uploads/') . $item->photo; ?>">
+                </span>
+                <div class="content">
+                    <span class="top_line"></span>
+                    <h1><?= $item->title; ?></h1>
+                    <?= $item->description; ?>
+                </div>
             </div>
-        </div>
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/solar-house.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA ZAKŁADÓW</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
-            </div>
-        </div>
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/plug.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA INSTYTUCJI</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
-            </div>
-        </div>
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/tool.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA GOSPODARSTW DOMOWYCH</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
-            </div>
-        </div>
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/solar-house.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA ZAKŁADÓW</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
-            </div>
-        </div>
-        <div class="block_normal ruton_tile sep_bot-l">
-            <span class="bc_square" style="width:83%;height:100%;"></span>
-            <span class="tile_circle">
-                <img class="circle_icon" src="<?= base_url('assets/front/icons/plug.svg'); ?>">
-            </span>
-            <div class="content">
-                <span class="top_line"></span>
-                <h1>MONTAŻ INSTALACJI DLA INSTYTUCJI</h1>
-                <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula.</p>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </section>
 <section>
@@ -158,39 +69,22 @@
             <span class="top_line"></span>
             <span class="bc_square" style="width:90vw;height:340px;top:-20px;left:67px;"></span>
             <div class="sep_top-s">
-                <p>Co u nas</p>
-                <p><i>kupisz</i> ?</p>
+                <?= $s2->title; ?>
                 <div class="desc_2 sep_top-m">
-                    <p>Lorem ipsum dolor sit amet mi facilisis enim. Etiam nibh. Maecenas consequat, metus at ligula. Vivamus vitae metus. Morbi mauris ac turpis nec nunc eget tellus. Quisque urna. Suspendisse est. Nunc viverra a, hendrerit sollicitudin mi. Fusce commodo tincidunt mi, eu pulvinar felis, consequat lorem a leo sed est. Aliquam erat volutpat. Praesent justo. Vestibulum elit porttitor vel, ipsum. Nam pellentesque tincidunt, risus tortor, fermentum augue. Sed eros. Sed aliquet ultrices posuere, odio.</p>
+                    <?= $s2->description; ?>
                 </div>
             </div>
         </div>
         <div class="block_normal size-2">
             <div class="info_2 grid-4 gtab-2 gmob-1">
-                <div class="info_item">
-                    <div class="info_bc" style="background-image:url(<?= base_url('assets/front/img/panel-touch.jpg') ?>);"></div>
-                    <div class="info_text">
-                        <p>PANELE SŁONECZNE</p>
+                <?php foreach ($tiles2 as $item) : ?>
+                    <div class="info_item">
+                        <div class="info_bc" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);"></div>
+                        <div class="info_text">
+                            <p><?= $item->title; ?></p>
+                        </div>
                     </div>
-                </div>
-                <div class="info_item">
-                    <div class="info_bc" style="background-image:url(<?= base_url('assets/front/img/key.jpg') ?>);"></div>
-                    <div class="info_text">
-                        <p>ELEMENTY MOCOWAŃ</p>
-                    </div>
-                </div>
-                <div class="info_item">
-                    <div class="info_bc" style="background-image:url(<?= base_url('assets/front/img/multi-min.png') ?>);"></div>
-                    <div class="info_text">
-                        <p>PODZESPOŁY ELEKTRYCZNE</p>
-                    </div>
-                </div>
-                <div class="info_item">
-                    <div class="info_bc" style="background-image:url(<?= base_url('assets/front/img/inv.png') ?>);"></div>
-                    <div class="info_text">
-                        <p>INWERTERY /FALOWNIKI</p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

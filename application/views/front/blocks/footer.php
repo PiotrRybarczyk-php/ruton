@@ -3,7 +3,7 @@
     <div class="block-1">
         <h1 class="title"><span class="top_line"></span>kontakt</h1>
         <div class="f-content">
-            <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></a>
+            <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('uploads/') . $logo->photo; ?>"></a>
             <div class="footer_contact">
                 <desc>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</desc>
                 <p>59-200 Legnica</p>
@@ -102,13 +102,13 @@ if ($cp == 'main') {
         }
     }
 </script>
-<!-- <script>
+<script>
     window.addEventListener("load", function() {
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
                     "background": "<?= $settings->first_color; ?>",
-                    "text": "#000"
+                    "text": "#fff"
                 },
                 "button": {
                     "background": "#eee",
@@ -126,7 +126,7 @@ if ($cp == 'main') {
             }
         })
     });
-</script> -->
+</script>
 <?php if ($cp == 'kontakt') : ?>
 
     <script>

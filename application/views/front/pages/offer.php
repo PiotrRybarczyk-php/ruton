@@ -1,8 +1,8 @@
 <div class="banner">
-    <div class="banner_bc" style="background-image:url(<?= base_url('assets/front/img/offer_banner.jpg'); ?>);"></div>
+    <div class="banner_bc" style="background-image:url(<?= base_url('uploads/') . $banner->photo; ?>);"></div>
     <div class="mask">
         <div class="flex_box flex_align_c set_height">
-            <h1 class="banner_title" style="padding-right:108px;">fotowoltaika z montażem</h1>
+            <h1 class="banner_title" style="padding-right:108px;"><?= $banner->title; ?></h1>
         </div>
         <div class="white-bg"></div>
     </div>

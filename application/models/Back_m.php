@@ -27,27 +27,12 @@ class Back_m extends CI_Model
         return $query->row();
     }
 
-    public function get_one_work()
+    public function get_api_photos()
     {
-        $sup_query = $this->db->query("SELECT work_link FROM info WHERE id = 4; ");
-        $query = $this->db->query("SELECT * FROM work WHERE id = '" . $sup_query->row()->work_link . "'; ");
-        return $query->row();
+        $this->db->where(['is_photo' => 1]);
+        $query = $this->db->get('media');
+        return $query->result();
     }
-
-    public function get_one_article_main()
-    {
-        $sup_query = $this->db->query("SELECT update_link FROM info WHERE id = 5; ");
-        $query = $this->db->query("SELECT * FROM blog WHERE id = '" . $sup_query->row()->update_link . "'; ");
-        return $query->row();
-    }
-
-    public function get_one_article_about()
-    {
-        $sup_query = $this->db->query("SELECT update_link FROM aboutus WHERE id = 1; ");
-        $query = $this->db->query("SELECT * FROM blog WHERE id = '" . $sup_query->row()->update_link . "'; ");
-        return $query->row();
-    }
-
 
     public function get_subpage($page)
     {
@@ -56,12 +41,6 @@ class Back_m extends CI_Model
         return $query->row();
     }
 
-    public function get_api_photos()
-    {
-        $this->db->where(['is_photo' => 1]);
-        $query = $this->db->get('media');
-        return $query->result();
-    }
 
     public function get_images($table, $table_name, $id)
     {
@@ -75,14 +54,14 @@ class Back_m extends CI_Model
 
     public function insert($table, $data)
     {
-        $data = $this->security->xss_clean($data);
+        //$data = $this->security->xss_clean($data);
         $query = $this->db->insert($table, $data);
         return $query;
     }
 
     public function update($table, $data, $id)
     {
-        $data = $this->security->xss_clean($data);
+        //$data = $this->security->xss_clean($data);
         $this->db->where(['id' => $id]);
         $query = $this->db->update($table, $data);
         return $query;

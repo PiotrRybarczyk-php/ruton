@@ -31,20 +31,24 @@
     .goog-te-banner-frame.skiptranslate {
       display: none !important;
     }
+
+    .cc-animate.cc-revoke.cc-bottom {
+      transform: unset !important;
+    }
   </style>
   <header>
     <div class="navbar_ruton">
-      <div class="navbar_section flex_align_c flex_mob"><a href="<?= base_url(); ?>" class="navbar_logo"><img src="<?= base_url('assets/front/img/ruton_logo.png') ?>"></a>
+      <div class="navbar_section flex_align_c flex_mob"><a href="<?= base_url(); ?>" class="navbar_logo"><img src="<?= base_url('uploads/') . $logo->photo; ?>"></a>
         <button class="navbar_toggler tab_block" onclick="toggle_nav()" type="button">
           <img class="navbar_bars" src="<?= base_url('assets/front/img/bars-solid.svg') ?>">
         </button>
       </div>
       <div class="navbar_section flex_align_c">
         <div class="navbar_list flex_c" id="navbar">
-          <p><a href="<?= base_url('oferty') ?>" class="subpage_link<?php if ($cp == 'oferty') echo ' active'; ?>">Fotowoltaika</a><span class="subpage_line"></span></p>
-          <p><a href="<?= base_url('montaz') ?>" class="subpage_link<?php if ($cp == 'montaz') echo ' active'; ?>">Samodzielny Montaż</a><span class="subpage_line"></span></p>
-          <p><a href="<?= base_url('poradnik') ?>" class="subpage_link<?php if ($cp == 'poradnik') echo ' active'; ?>">Poradnik</a><span class="subpage_line"></span></p>
-          <p><a href="<?= base_url('kontakt') ?>" class="subpage_link<?php if ($cp == 'kontakt') echo ' active'; ?>">Kontakt</a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('oferty') ?>" class="subpage_link<?php if ($cp == 'oferty') echo ' active'; ?>"><?= $subpages[0]->title; ?></a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('montaz') ?>" class="subpage_link<?php if ($cp == 'montaz') echo ' active'; ?>"><?= $subpages[1]->title; ?></a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('poradnik') ?>" class="subpage_link<?php if ($cp == 'poradnik') echo ' active'; ?>"><?= $subpages[2]->title; ?></a><span class="subpage_line"></span></p>
+          <p><a href="<?= base_url('kontakt') ?>" class="subpage_link<?php if ($cp == 'kontakt') echo ' active'; ?>"><?= $subpages[3]->title; ?></a><span class="subpage_line"></span></p>
         </div>
       </div>
     </div>

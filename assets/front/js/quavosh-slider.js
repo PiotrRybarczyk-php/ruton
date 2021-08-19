@@ -8,7 +8,7 @@ var qs_touchstart;
 var qs_touchend;
 var qs_swipe_l;
 var number_of_sliders;
-var timer, press_timer;
+var timer;
 var y;
 var sliderclass;
 

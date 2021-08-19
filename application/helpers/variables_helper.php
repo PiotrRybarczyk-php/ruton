@@ -5,7 +5,6 @@ function subtitle() {
     return  'Mały panel do robienia wielkich rzeczy';
 }
 
-
-function isOnWebp() {
-    return  true;
-}
+// function isOnWebp() {
+//     return  false;
+// }

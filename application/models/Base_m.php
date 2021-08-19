@@ -132,7 +132,7 @@ class Base_m extends CI_Model
                                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;');  
 
         $query = $this->db->query('INSERT INTO `users` (`id`, `created`, `active`, `login`, `email`, `password`, `first_name`,           `last_name`, `avatar`, `rola`) VALUES
-                (1, "2019-04-10 13:48:15", 1, "admin", "dawid.plociennik13@gmail.com", "$2y$12$KctJz0aVFYzrBNXpQ2xvve8CPzf6BDVgv7MnLmjp/ri2sI1jOutK.", "Dawid", "Płóciennik", "", "administrator");');  
+                (1, "2019-04-10 13:48:15", 1, "admin", "dawid.plociennik13@gmail.com", "$2y$12$w0SOOfP5i7i32aSjxKLZs.ZY0qeaht3Q8Xj.btLaSVsKrK3VLM/ma", "Dawid", "Płóciennik", "", "administrator");');  
 
         $query = $this->db->query('ALTER TABLE `contact_settings` ADD PRIMARY KEY (`id`);');  
 

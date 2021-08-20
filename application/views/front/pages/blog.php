@@ -69,8 +69,8 @@
                             </div>
                         </div>
                         <div class="block_normal">
-                            <div class="offer_pic" style="background-image:url(<?= base_url('wpis/') . $item->id . '/artykul'; ?>)"></div>
-                            <div class="flex_box"><a href="<?= base_url('wpis/1/dlaczego'); ?>" class="btn_blog">czytaj więcej</a><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
+                            <div class="offer_pic" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>)"></div>
+                            <div class="flex_box"><a href="<?= base_url('wpis/') . $item->id . '/artykul'; ?>" class="btn_blog">czytaj więcej</a><i class="tab_hide" style="width:20%;"></i><span class="green_square" style="max-width:183px;"></span></div>
                         </div>
                     </div>
                 </div>

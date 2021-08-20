@@ -25,26 +25,28 @@
         <span class="bc_square" style="max-width:947px;height:324px;width:100%;top:100%;"></span>
         <h1 class="contact_header"><?= $contact_desc[2]->subtitle; ?></h1>
     </div>
-    <div class="flex_box flex_c sep_top-l">
-        <div class="contact_form">
-            <input class="form_input" type="text" name="1" placeholder="Temat Wiadomości">
-            <input class="form_input" type="text" name="2" placeholder="Imię i Nazwisko">
-            <input class="form_input" type="text" name="3" placeholder="Telefon kontaktowy">
-            <input class="form_input" type="text" name="4" placeholder="Adres e-mailowy">
-            <textarea required class="form_textarea" rows="7" placeholder="Treść pytania..." name="message"></textarea>
-            <div class="rodo_box">
-                <div class="flex_box rodo_resize">
-                    <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
-                    <p class="form_rodo"><a href="#">Polityka Prywatności</a></p>
-                </div>
-                <div class="flex_box flex_r rodo_resize">
-                    <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
-                    <p class="form_rodo"><a href="#">Zgoda na kontakt tel. i mail'owy</a></p>
+    <form action="<?= base_url(); ?>mailer/send" method="POST" id="contact-form">
+        <div class="flex_box flex_c sep_top-l">
+            <div class="contact_form">
+                <input required class="form_input" type="text" name="1" placeholder="Temat Wiadomości">
+                <input required class="form_input" type="text" name="2" placeholder="Imię i Nazwisko">
+                <input required class="form_input" type="text" name="3" placeholder="Telefon kontaktowy">
+                <input required class="form_input" type="text" name="4" placeholder="Adres e-mailowy">
+                <textarea required class="form_textarea" rows="7" placeholder="Treść pytania..." name="message"></textarea>
+                <div class="rodo_box">
+                    <div class="flex_box rodo_resize">
+                        <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
+                        <p class="form_rodo"><a href="#">Polityka Prywatności</a></p>
+                    </div>
+                    <div class="flex_box flex_r rodo_resize">
+                        <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
+                        <p class="form_rodo"><a href="#">Zgoda na kontakt tel. i mail'owy</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="flex_box flex_c sep_top-s"><button class="btn_form">Wyślij Formularz</button></div>
+        <div class="flex_box flex_c sep_top-s"><button type="submit" value="Submit" class="btn_form">Wyślij Formularz</button></div>
+    </form>
 </section>
 <?php if ($support->active == 1) : ?>
     <?php $prefix = ''; ?>

@@ -14,7 +14,7 @@
                             <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
                             <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
                                 <div class="sep_top-m" style="text-transform:uppercase;min-height:135px;"><?= $item->subtitle; ?></div>
-                                <div class="flex_box flex_c sep_top-l" style="max-width:320px;"><a href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
+                                <div class="flex_box flex_c sep_slider" style="max-width:320px;"><a href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
                             </div>
                         </div>
                     </div>

@@ -98,10 +98,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'ruton',
+	'hostname' => '66062.m.tld.pl',
+	'username' => 'admin66062_ruton',
+	'password' => '7WjSM1v730',
+	'database' => 'baza66062_ruton',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

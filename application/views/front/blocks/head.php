@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-  <title>Ruton</title>
+  <title><?= $contact->company; ?></title>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 </head>

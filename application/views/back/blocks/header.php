@@ -45,7 +45,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon far fa-caret-square-down tx-20"></i>
+        <i class="menu-item-icon fas fa-globe tx-20"></i>
         <span class="menu-item-label">Strona Główna</span>
         <i class="menu-item-arrow fa fa-angle-down"></i>
       </div><!-- menu-item -->

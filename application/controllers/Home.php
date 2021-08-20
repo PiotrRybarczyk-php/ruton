@@ -30,6 +30,12 @@ class Home extends CI_Controller
 		$data['tiles1'] = $this->back_m->get_all('s1_tiles');
 		$data['s2'] = $this->back_m->get_one('s2', 1);
 		$data['tiles2'] = $this->back_m->get_all('s2_tiles');
+		$data['s3'] = $this->back_m->get_all('s3');
+		$data['s4'] = $this->back_m->get_one('s4', 1);
+		$data['s5'] = $this->back_m->get_one('s5', 1);
+		$data['blog'] = $this->back_m->get_all('blog');
+		$data['support'] = $this->back_m->get_one('support', 1);
+		$data['partner'] = $this->back_m->get_all('partners');
 		echo loadViewsFront('index', $data);
 	}
 
@@ -39,6 +45,9 @@ class Home extends CI_Controller
 		$data['cp'] = $this->uri->segment(1);
 		$data['logo'] = $this->back_m->get_one('banners', 1);
 		$data['banner'] = $this->back_m->get_one('banners', 2);
+		$data['offer'] = $this->back_m->get_by_order('offer', 'queue');
+		$data['support'] = $this->back_m->get_one('support', 2);
+		$data['partner'] = $this->back_m->get_all('partners');
 		echo loadViewsFront('offer', $data);
 	}
 
@@ -47,6 +56,9 @@ class Home extends CI_Controller
 		$data = loadDefaultDataFront();
 		$data['cp'] = $this->uri->segment(1);
 		$data['logo'] = $this->back_m->get_one('banners', 1);
+		$data['banner'] = $this->back_m->get_one('banners', 3);
+		$data['offer'] = $this->back_m->get_by_order('info', 'queue');
+		$data['support'] = $this->back_m->get_one('support', 3);
 		echo loadViewsFront('self', $data);
 	}
 	public function blog()
@@ -55,7 +67,7 @@ class Home extends CI_Controller
 		$data['cp'] = $this->uri->segment(1);
 		$data['logo'] = $this->back_m->get_one('banners', 1);
 		$data['banner'] = $this->back_m->get_one('banners', 4);
-		$data['blog'] = $this->back_m->get_all('blog');
+		$data['blog'] = $this->back_m->get_with_limit('blog', 10, 'desc');
 		echo loadViewsFront('blog', $data);
 	}
 
@@ -64,6 +76,9 @@ class Home extends CI_Controller
 		$data = loadDefaultDataFront();
 		$data['cp'] = $this->uri->segment(1);
 		$data['logo'] = $this->back_m->get_one('banners', 1);
+		$data['banner'] = $this->back_m->get_one('banners', 5);
+		$data['contact_desc'] = $this->back_m->get_all('contact');
+		$data['support'] = $this->back_m->get_one('support', 4);
 		echo loadViewsFront('contact', $data);
 	}
 

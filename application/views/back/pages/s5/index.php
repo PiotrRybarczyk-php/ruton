@@ -1,7 +1,7 @@
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
       <div class="pd-30">
-        <h4 class="tx-gray-800 mg-b-5"><?php echo ucfirst(str_replace('_', ' ', $this->uri->segment(2))); ?></h4>
+        <h4 class="tx-gray-800 mg-b-5">Pulpit poradnika</h4>
         <p class="mg-b-0"><?php echo subtitle(); ?></p>
       </div><!-- d-flex -->
       <div class="br-pagebody mg-t-0 pd-x-30">

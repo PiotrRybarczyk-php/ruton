@@ -27,7 +27,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-ad tx-20"></i>
         <span class="menu-item-label">Loga i Banery</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -36,7 +36,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-images tx-20"></i>
         <span class="menu-item-label">Slajder</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -64,7 +64,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-headset tx-20"></i>
         <span class="menu-item-label">Wsparcie</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -73,7 +73,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-handshake tx-20"></i>
         <span class="menu-item-label">Zaufali Nam</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -82,7 +82,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-comment-dollar tx-20"></i>
         <span class="menu-item-label">Oferta</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -91,7 +91,7 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-wrench tx-20"></i>
         <span class="menu-item-label">Samodzielny Montaż</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
@@ -100,8 +100,17 @@
           echo 'active';
         } ?>">
       <div class="br-menu-item">
-        <i class="menu-item-icon icon fab fa-wpforms tx-20"></i>
+        <i class="menu-item-icon icon fas fa-lightbulb tx-20"></i>
         <span class="menu-item-label">Poradnik</span>
+      </div><!-- menu-item -->
+    </a><!-- br-menu-link -->
+    <a href="<?php echo base_url(); ?>panel/contact" class="br-menu-link
+        <?php if ($this->uri->segment(2) == 'contact' || $this->uri->segment(4) == 'contact') {
+          echo 'active';
+        } ?>">
+      <div class="br-menu-item">
+        <i class="menu-item-icon icon fas fa-address-card tx-20"></i>
+        <span class="menu-item-label">Kontakt opisy</span>
       </div><!-- menu-item -->
     </a><!-- br-menu-link -->
 
@@ -452,6 +461,13 @@
         <h6 class="tx-13 tx-normal">Kolor pierwszorzędny:</h6>
         <div class="pos-relative">
           <input type="color" id="first_color" name="first_color" onchange="updateField('first_color' , 'settings')" value="<?php echo $settings->first_color; ?>" class="form-control form-control-inverse transition pd-y-5">
+        </div>
+      </div>
+
+      <div class="pd-y-20 pd-x-25 tx-white">
+        <h6 class="tx-13 tx-normal">Kolor drugorzędny:</h6>
+        <div class="pos-relative">
+          <input type="color" id="second_color" name="second_color" onchange="updateField('second_color' , 'settings')" value="<?php echo $settings->second_color; ?>" class="form-control form-control-inverse transition pd-y-5">
         </div>
       </div>
 

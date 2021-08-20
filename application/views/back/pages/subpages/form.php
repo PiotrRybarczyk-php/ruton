@@ -22,13 +22,23 @@
       </div>
       <div class="row no-gutters">
         <div class="col-12 col-sm-4 col-lg-2">
-          Krótki opis strony:
+          Nazwa strony w Stópce:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">
-          <textarea class="summernote" name="description"><?php echo @$value->description; ?></textarea>
-
+          <input class="form-control" type="text" name="subtitle" value="<?= @$value->subtitle; ?>">
         </div>
       </div>
+      <?php if (@$value->description != "ommit") : ?>
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-4 col-lg-2">
+            Krótki opis strony:
+          </div>
+          <div class="col-12 col-sm-8 col-lg-9">
+            <textarea class="summernote" name="description"><?php echo @$value->description; ?></textarea>
+
+          </div>
+        </div>
+      <?php endif; ?>
 
 
 

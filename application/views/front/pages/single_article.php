@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <?php if ($blog[($i + 1) % $size_of]->active == 1) : ?>
-                                <div class="flex_box flex_c md_padding">
+                                <div class="flex_box flex_c md_padding mob_hide">
                                     <div class="block_normal" style="max-width:404px;">
                                         <span class="green_square" style="max-width:183px;"></span>
                                         <div class="art_pic-2" style="background-image:url(<?= base_url('uploads/') . $blog[($i + 1) % $size_of]->photo; ?>)"></div>
@@ -79,7 +79,7 @@
                                 </div>
                             <?php endif; ?>
                             <?php if ($blog[($i + 2) % $size_of]->active == 1) : ?>
-                                <div class="flex_box flex_c md_padding">
+                                <div class="flex_box flex_c md_padding tab_hide">
                                     <div class="block_normal" style="max-width:404px;">
                                         <span class="green_square" style="max-width:183px;"></span>
                                         <div class="art_pic-2" style="background-image:url(<?= base_url('uploads/') . $blog[($i + 2) % $size_of]->photo; ?>)"></div>

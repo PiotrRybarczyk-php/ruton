@@ -30,6 +30,7 @@ class Info extends CI_Controller
 
 			// DEFAULT DATA
 			$data = loadDefaultData();
+			$data['size'] = $this->back_m->get_count($table);
 
 			if ($id != '') {
 				$data['value'] = $this->back_m->get_one($table, $id);

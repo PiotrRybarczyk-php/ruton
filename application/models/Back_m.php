@@ -9,6 +9,19 @@ class Back_m extends CI_Model
         return $query->result();
     }
 
+    public function get_count($table)
+    {
+        $query = $this->db->get($table);
+        return $query->num_rows();
+    }
+
+    public function get_by_order($table, $col)
+    {
+        $this->db->order_by($col, 'asc');
+        $query = $this->db->get($table);
+        return $query->result();
+    }
+
     public function get_with_limit($table, $limit, $sort = null)
     {
         $this->db->limit($limit);

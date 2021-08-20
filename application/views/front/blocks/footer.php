@@ -5,12 +5,12 @@
         <div class="f-content">
             <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('uploads/') . $logo->photo; ?>"></a>
             <div class="footer_contact">
-                <desc>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</desc>
-                <p>59-200 Legnica</p>
-                <p>ul. Fabryczna 22</p>
-                <p>NIP: 123-123-12-12</p>
-                <p>tel. <a href="#">+48 500 500 500</a></p>
-                <p>email. <a href="#">test@test.com</a></p>
+                <desc><?= textlim($settings->description, 162); ?></desc>
+                <p><?= $contact->zip_code . ' ' . $contact->city; ?></p>
+                <p><?= $contact->address; ?></p>
+                <p><?= $contact->label6 ?>: <?= $contact->NIP; ?></p>
+                <p><?= $contact->label1 ?> <a href="tel:<?= $contact->phone1; ?>"><?= $contact->phone1; ?></a></p>
+                <p><?= $contact->label3 ?> <a href="mailto:<?= $contact->email1; ?>"><?= $contact->email1; ?></a></p>
             </div>
         </div>
     </div>
@@ -20,17 +20,17 @@
                 <h1>Ważne Informacje</h1>
                 <a href="#">pliki cookies</a><br>
                 <a href="#">polityka rodo</a><br>
-                <a href="#">kontakt</a>
+                <a href="kontakt"><?= $subpages[3]->subtitle; ?></a>
             </div>
             <div class="f-content size-6">
                 <h1>Oferta:</h1>
-                <a href="#">FOTOWOLTAIKA Z MONTAŻEM</a><br>
-                <a href="#">DO SAMODZIELNEGO MONTAŻU</a><br>
-                <a href="#">PORADNIK</a>
+                <a href="oferty"><?= $subpages[0]->subtitle; ?></a><br>
+                <a href="montaz"><?= $subpages[1]->subtitle; ?></a><br>
+                <a href="poradnik"><?= $subpages[2]->subtitle; ?></a>
             </div>
             <div class="f-content size-3 mob_size-12">
                 <h1>Nasze Media:</h1>
-                <a href="#"><img class="social_icon" src="<?= base_url('assets/front/icons/fb.svg'); ?>"></a><br>
+                <a href="<?= $settings->fb_link; ?>"><img class="social_icon" src="<?= base_url('assets/front/icons/fb.svg'); ?>"></a><br>
             </div>
         </div>
     </div>

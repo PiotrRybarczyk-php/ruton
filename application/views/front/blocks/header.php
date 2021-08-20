@@ -35,6 +35,103 @@
     .cc-animate.cc-revoke.cc-bottom {
       transform: unset !important;
     }
+
+    .desk_pad i {
+      color: <?= $settings->first_color; ?> !important;
+    }
+
+    .top_line {
+      border-top-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .info_text {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    h1 i {
+      color: <?= $settings->first_color; ?> !important;
+    }
+
+    h2 i {
+      color: <?= $settings->first_color; ?> !important;
+    }
+
+    .tile_text {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    footer .block-2 {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    footer .title {
+      color: <?= $settings->first_color; ?> !important;
+    }
+
+    .footer_contact a:hover {
+      color: <?= $settings->first_color; ?> !important;
+    }
+
+    .btn_offer:hover {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .green_square {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .btn_self:hover {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .btn_blog:hover {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .contact_form {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    input.form_rodo {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    input.form_rodo:checked {
+      border-top-color: <?= $settings->first_color; ?> !important;
+      border-left-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .btn_form:hover {
+      background-color: <?= $settings->first_color; ?> !important;
+    }
+
+    .btn_ruton {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
+    .guide_tile:hover>.tile_text {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
+    .guide_button {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
+    .block-2 .f-content a:hover {
+      color: <?= $settings->second_color; ?> !important;
+    }
+
+    .btn_self {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
+    a.btn_blog {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
+    .btn_form {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
   </style>
   <header>
     <div class="navbar_ruton">

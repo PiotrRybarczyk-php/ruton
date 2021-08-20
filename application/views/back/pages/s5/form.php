@@ -61,8 +61,11 @@
           Główny Artykuł:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">
-          <select class="form-control" id="main_art" name="main_art">
-            <option <?php if (@$value->main_art == "Test") echo "selected"; ?> value="Test">Testowy</option>
+          <select class="form-control" id="entry_main" name="entry_main">
+            <option style="color:#95C11F;" <?php if (@$value->entry_main == 0) echo "selected"; ?> value="0">Najnowszy</option>
+            <?php foreach ($blog as $item) : ?>
+              <option <?php if (@$value->entry_main == $item->id) echo "selected"; ?> value="<?= $item->id; ?>"><?= $item->title; ?></option>
+            <?php endforeach; ?>
           </select>
         </div>
       </div>
@@ -71,8 +74,10 @@
           Poboczny Artykuł 1:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">
-          <select class="form-control" id="main_art" name="main_art">
-            <option <?php if (@$value->main_art == "Test") echo "selected"; ?> value="Test">Testowy</option>
+          <select class="form-control" id="entry_1" name="entry_1">
+            <?php foreach ($blog as $item) : ?>
+              <option <?php if (@$value->entry_1 == $item->id) echo "selected"; ?> value="<?= $item->id; ?>"><?= $item->title; ?></option>
+            <?php endforeach; ?>
           </select>
         </div>
       </div>
@@ -81,8 +86,10 @@
           Poboczny Artykuł 2:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">
-          <select class="form-control" id="main_art" name="main_art">
-            <option <?php if (@$value->main_art == "Test") echo "selected"; ?> value="Test">Testowy</option>
+          <select class="form-control" id="entry_2" name="entry_2">
+            <?php foreach ($blog as $item) : ?>
+              <option <?php if (@$value->entry_2 == $item->id) echo "selected"; ?> value="<?= $item->id; ?>"><?= $item->title; ?></option>
+            <?php endforeach; ?>
           </select>
         </div>
       </div>

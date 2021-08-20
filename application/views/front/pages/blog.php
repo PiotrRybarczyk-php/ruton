@@ -13,7 +13,7 @@
     </div>
 </div>
 <?php $i = 0; ?>
-<?php foreach (array_reverse($blog) as $item) : ?>
+<?php foreach ($blog as $item) : ?>
     <?php if ($item->active == 1) : ?>
         <section>
             <?php if ($i % 2 == 0) : ?>

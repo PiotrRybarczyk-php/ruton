@@ -79,7 +79,7 @@ if ($cp == 'main') {
 
     function rodo_setup() {
         if (typeof rodo_text !== 'undefined') {
-            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 75);
+            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 72) + '...';
         }
     }
 
@@ -90,7 +90,7 @@ if ($cp == 'main') {
             document.getElementById('expand').innerHTML = ' Mniej';
         } else {
             rodo_expanded = false;
-            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 75);
+            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 72) + '...';
             document.getElementById('expand').innerHTML = ' Więcej';
         }
     }

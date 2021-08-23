@@ -650,7 +650,7 @@
       margin-top: 160px;
       display: flex;
       width: 100%;
-      min-height: 266px;
+      min-height: 300px;
       background-color: #F6F6F6;
       padding-left: 5.0vw;
     }
@@ -676,7 +676,7 @@
 
     .block-1 .f-content{
          display: flex;
-         margin-top: 2vw;
+         margin-top: 3vw;
          margin-bottom: 2vw;
          max-width: 650px;
          width: 100%;
@@ -687,7 +687,7 @@
     }
     .block-2 .f-content{
       width: 100%;
-      padding-top: 45px;
+      padding-top: 3vw;
       padding-left: 40px;
       color: white;
     }

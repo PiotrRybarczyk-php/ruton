@@ -5,7 +5,7 @@
             <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
             else $temp_photo = $item->photo; ?>
             <?php if ($item->active == 1) : ?>
-                <div class="Slides" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);">
+                <div class="Slides lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)">
                     <div class="mask">
                         <h1 class="s_title"><?= $item->title; ?></h1>
                         <div class="white-bg"></div>
@@ -37,7 +37,7 @@
     <div class="temp_flex main_padding sep_top-xl">
         <?php if (!empty($s1->photo_webp)) $temp_photo = $s1->photo_webp;
         else $temp_photo = $s1->photo; ?>
-        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);"></div>
+        <div class="box_1 mob_hide lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>
         <div class="box_2">
             <span class="bc_square" style="width:400px;height:360px;top:12%;left:-1%"></span>
             <span class="bc_square mob_hide" style="width:74px;height:74px;top:-1%;left:385px"></span>
@@ -86,7 +86,7 @@
                     <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
                     else $temp_photo = $item->photo; ?>
                     <div class="info_item">
-                        <div class="info_bc" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);"></div>
+                        <div class="info_bc lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>
                         <div class="info_text">
                             <p><?= $item->title; ?></p>
                         </div>
@@ -111,10 +111,10 @@
                 </div>
             </div>
             <div class="flex_box flex_mob">
-                <div class="desc_3-img1" style="background-image:url(<?= base_url('uploads/') . $s3[0]->photo; ?>);"></div>
+                <div class="desc_3-img1 lazy" data-bg="url(<?= base_url('uploads/') . $s3[0]->photo; ?>)"></div>
             </div>
             <div class="flex_box flex_mob">
-                <div class="desc_3-img2" style="background-image:url(<?= base_url('uploads/') . $s3[1]->photo; ?>);"></div>
+                <div class="desc_3-img2 lazy" data-bg="url(<?= base_url('uploads/') . $s3[1]->photo; ?>)"></div>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@
                 <?php if ($item->active == 1) : ?>
                     <div class="Slides">
                         <div class="s2_spacer"></div>
-                        <div class="s2_img" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);"></div>
+                        <div class="s2_img lazy" data-bg="url(<?= base_url('uploads/') . $item->photo; ?>)"></div>
                         <div class="s2_desc">
                             <h1><?= $item->title; ?></h1>
                             <?= textlim($item->description, 742); ?>
@@ -202,23 +202,23 @@ for ($i; $i < count($blog); $i++) {
             <div class="sep_top-l">
                 <?= $s5->title; ?>
             </div>
-            <div class="guide_img mob_hide" style="background-image:url(<?= base_url('uploads/') . $s5->photo; ?>);">
+            <div class="guide_img mob_hide lazy" data-bg="url(<?= base_url('uploads/') . $s5->photo; ?>)">
 
             </div>
         </div>
         <div class="guide_box size-2">
             <div class="guide_1">
-                <div class="guide_bc" style="background-image:url(<?= base_url('uploads/') . $blog[$entries[0]]->photo; ?>)"></div>
+                <div class="guide_bc lazy" data-bg="url(<?= base_url('uploads/') . $blog[$entries[0]]->photo; ?>)"></div>
                 <h1><?= $blog[$entries[0]]->subtitle; ?></h1>
                 <div class="guide_desc"><?= textlim($blog[$entries[0]]->description, 1130); ?></div>
             </div>
             <div class="guide_2">
                 <a href="<?= base_url() . 'wpis/' . $blog[$entries[1]]->id . '/artykul'; ?>" class="guide_tile">
-                    <div class="tile_pic" style="background-image:url(<?= base_url('uploads/') . $blog[$entries[1]]->photo; ?>)"></div>
+                    <div class="tile_pic lazy" data-bg="url(<?= base_url('uploads/') . $blog[$entries[1]]->photo; ?>)"></div>
                     <div class="tile_text"><?= textlim($blog[$entries[1]]->title, 32); ?></div>
                 </a>
                 <a href="<?= base_url() . 'wpis/' . $blog[$entries[2]]->id . '/artykul'; ?>" class="guide_tile">
-                    <div class="tile_pic" style="background-image:url(<?= base_url('uploads/') . $blog[$entries[2]]->photo; ?>)"></div>
+                    <div class="tile_pic lazy" data-bg="url(<?= base_url('uploads/') . $blog[$entries[2]]->photo; ?>)"></div>
                     <div class="tile_text"><?= textlim($blog[$entries[2]]->title, 32); ?></div>
                 </a>
                 <a href="<?= base_url('poradnik') ?>" class="guide_button">

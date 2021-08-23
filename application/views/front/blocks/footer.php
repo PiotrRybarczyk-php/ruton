@@ -57,8 +57,13 @@ if ($cp == 'main') {
 }
 ?>
 
+
 <script>
     var navbar_on = false;
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+        // ... more custom settings?
+    });
 
     function set_size() {
         if (window.screen.width > 1024) {

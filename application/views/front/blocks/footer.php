@@ -18,8 +18,8 @@
         <div class="grid-12">
             <div class="f-content size-3 mob_size-6">
                 <h1>Ważne Informacje</h1>
-                <a href="#">pliki cookies</a><br>
-                <a href="#">polityka rodo</a><br>
+                <a href="<?= base_url('uploads/') . $settings->privace;  ?>">pliki cookies</a><br>
+                <a href="<?= base_url('uploads/') . $settings->privace;  ?>">polityka rodo</a><br>
                 <a href="kontakt"><?= $subpages[3]->subtitle; ?></a>
             </div>
             <div class="f-content size-6">

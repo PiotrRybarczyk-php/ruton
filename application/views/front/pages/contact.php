@@ -36,11 +36,11 @@
                 <div class="rodo_box">
                     <div class="flex_box rodo_resize">
                         <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
-                        <p class="form_rodo"><a href="#">Polityka Prywatności</a></p>
+                        <p class="form_rodo"><a href="<?= base_url('uploads/') . $settings->privace;  ?>">Polityka Prywatności</a></p>
                     </div>
                     <div class="flex_box flex_r rodo_resize">
                         <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
-                        <p class="form_rodo"><a href="#">Zgoda na kontakt tel. i mail'owy</a></p>
+                        <p class="form_rodo"><a href="<?= base_url('uploads/') . $settings->privace;  ?>">Zgoda na kontakt tel. i mail'owy</a></p>
                     </div>
                     <input type="hidden" name="rodo3" value="1">
                 </div>
@@ -62,7 +62,7 @@
         <div class="flex_box flex_c sep_top-m">
             <div class="call_block flex_align_e">
                 <img class="call_icon" src="<?= base_url('assets/front/icons/call.svg'); ?>">
-                <p class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></p>
+                <a href="tel:<?= $contact->phone2; ?>" class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></a>
             </div>
         </div>
     </section>

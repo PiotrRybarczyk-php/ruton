@@ -97,7 +97,7 @@
         <div class="flex_box flex_c sep_top-m">
             <div class="call_block flex_align_e">
                 <img class="call_icon" src="<?= base_url('assets/front/icons/call.svg'); ?>">
-                <p class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></p>
+                <a href="tel:<?= $contact->phone2; ?>" class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></a>
             </div>
         </div>
     </section>

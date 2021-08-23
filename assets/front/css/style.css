@@ -480,6 +480,9 @@
 
     .call_number{
       position: absolute;
+      color: black;
+      transition: 0.3s;
+      text-decoration: none;
       left: 100px;
       width: 600px;
       height: 110px;
@@ -491,7 +494,12 @@
 
     .call_number i {
       font-style: normal;
+      transition: 0.3s;
       font-weight: 700;
+    }
+
+    .call_number:hover > i {
+      color: #95C11F;
     }
 
     .s2_desc{

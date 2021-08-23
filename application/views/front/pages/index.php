@@ -1,8 +1,11 @@
+<?php $temp_photo = ''; ?>
 <div class="flex_box sep_bot-xl">
     <div class="fader" id="slider-1">
         <?php foreach ($slider as $item) : ?>
+            <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
+            else $temp_photo = $item->photo; ?>
             <?php if ($item->active == 1) : ?>
-                <div class="Slides" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);">
+                <div class="Slides" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);">
                     <div class="mask">
                         <h1 class="s_title"><?= $item->title; ?></h1>
                         <div class="white-bg"></div>
@@ -32,7 +35,9 @@
 </div>
 <section>
     <div class="temp_flex main_padding sep_top-xl">
-        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('uploads/') . $s1->photo; ?>);"></div>
+        <?php if (!empty($s1->photo_webp)) $temp_photo = $s1->photo_webp;
+        else $temp_photo = $s1->photo; ?>
+        <div class="box_1 mob_hide" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);"></div>
         <div class="box_2">
             <span class="bc_square" style="width:400px;height:360px;top:12%;left:-1%"></span>
             <span class="bc_square mob_hide" style="width:74px;height:74px;top:-1%;left:385px"></span>
@@ -78,8 +83,10 @@
         <div class="block_normal size-2">
             <div class="info_2 grid-4 gtab-2 gmob-1">
                 <?php foreach ($tiles2 as $item) : ?>
+                    <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
+                    else $temp_photo = $item->photo; ?>
                     <div class="info_item">
-                        <div class="info_bc" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);"></div>
+                        <div class="info_bc" style="background-image:url(<?= base_url('uploads/') . $temp_photo; ?>);"></div>
                         <div class="info_text">
                             <p><?= $item->title; ?></p>
                         </div>

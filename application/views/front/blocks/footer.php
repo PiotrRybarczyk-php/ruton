@@ -38,6 +38,7 @@
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <!-- <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script> -->
 <!-- <script type="text/javascript" src="<?= assets(); ?>dist/owl.carousel.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lc_lightbox.lite.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lightbox.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/qanim.js"></script>

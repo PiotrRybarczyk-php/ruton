@@ -1,3 +1,7 @@
+<script>
+    var rodo_text = '<?= $settings->rodo; ?>';
+    var rodo_expanded = false;
+</script>
 <div class="banner">
     <div class="banner_bc" style="background-image:url(<?= base_url('uploads/') . $banner->photo; ?>);"></div>
     <div class="mask">
@@ -34,14 +38,15 @@
                 <input required class="form_input" type="text" name="email" placeholder="Adres e-mailowy">
                 <textarea required class="form_textarea" rows="7" placeholder="Treść pytania..." name="message"></textarea>
                 <div class="rodo_box">
-                    <div class="flex_box rodo_resize">
-                        <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1"></div>
-                        <p class="form_rodo"><a href="<?= base_url('uploads/') . $settings->privace;  ?>">Polityka Prywatności</a></p>
+                    <div class="flex_box">
+                        <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo1" id="rodo1">
+                            <div style="width:30px;"></div>
+                        </div>
+                        <p class="form_rodo">
+                            <in id="rodo"></in><a class="rodo_collapse" id="expand" onclick="rodo_collapse()"> Więcej</a>
+                        </p>
                     </div>
-                    <div class="flex_box flex_r rodo_resize">
-                        <div style="width:30px;"><input type="checkbox" class="form_rodo" name="rodo2" id="rodo2"></div>
-                        <p class="form_rodo"><a href="<?= base_url('uploads/') . $settings->privace;  ?>">Zgoda na kontakt tel. i mail'owy</a></p>
-                    </div>
+                    <input type="hidden" name="rodo2" value="1">
                     <input type="hidden" name="rodo3" value="1">
                 </div>
             </div>

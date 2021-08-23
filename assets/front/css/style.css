@@ -26,6 +26,17 @@
       background-color: white;
     }
 
+    .rodo_collapse{
+      color:white;
+      font-weight:400;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .rodo_collapse:hover{
+         color: #FDAF2A;
+    }
+
     .navbar_section {
       display: flex;
       width: 50%;
@@ -970,6 +981,7 @@
       min-height: 636px;
       background-color: #95C11F;
       padding: 34px 6vw 35px 6vw;
+      transition: 0.4s;
     }
 
     input::placeholder{
@@ -1017,6 +1029,9 @@
       font-weight: 200;
       color:white;
       margin: 0px 0px 0px 0px;
+      overflow-y: hidden;
+      transition: 0.4s;
+      height: 100%;
     }
 
     .form_rodo a{
@@ -1042,7 +1057,8 @@
     }
 
     input.form_rodo:checked{
-      transform: rotate(60deg);
+      transform: rotate(60deg) translate(-5px,-3px);
+      height: 22px;
       border-top-color: #95C11F;
       border-left-color: #95C11F;
       width: 12px;

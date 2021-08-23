@@ -76,11 +76,30 @@ if ($cp == 'main') {
         }
 
     }
+
+    function rodo_setup() {
+        if (typeof rodo_text !== 'undefined') {
+            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 75);
+        }
+    }
+
+    function rodo_collapse() {
+        if (rodo_expanded == false) {
+            rodo_expanded = true;
+            document.getElementById('rodo').innerHTML = rodo_text;
+            document.getElementById('expand').innerHTML = ' Mniej';
+        } else {
+            rodo_expanded = false;
+            document.getElementById('rodo').innerHTML = rodo_text.substr(0, 75);
+            document.getElementById('expand').innerHTML = ' Więcej';
+        }
+    }
     window.onload = function() {
         //put here all library functions
         qanim();
         set_size();
         quavosh_slider(<?= $slider; ?>);
+        rodo_setup();
     };
 
     function reset_bar() {

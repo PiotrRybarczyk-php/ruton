@@ -182,7 +182,9 @@
             </div>
         </div>
         <div class="custom_box-2">
-            <div class="map_box"><iframe src="<?= $contact->map; ?>" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="map_box lazy" data-bg="url(<?= base_url('uploads/') . $s4->photo; ?>)">
+                <!-- <iframe src="<?= $contact->map; ?>" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
         </div>
     </div>
 </section>

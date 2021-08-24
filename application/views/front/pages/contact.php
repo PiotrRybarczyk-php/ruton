@@ -54,6 +54,15 @@
         <div class="flex_box flex_c sep_top-s"><button type="submit" value="Submit" class="btn_form">Wyślij Formularz</button></div>
     </form>
 </section>
+<section class="sep_top-xl">
+    <div class="flex_box flex_c">
+        <div class="custom_box-2">
+            <div class="map_box">
+                <iframe src="<?= $contact->map; ?>" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 <?php if ($support->active == 1) : ?>
     <?php $prefix = ''; ?>
     <?php if ($support->tick48 == 1) $prefix = '+48 '; ?>

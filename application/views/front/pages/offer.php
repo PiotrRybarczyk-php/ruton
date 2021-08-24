@@ -87,7 +87,7 @@
 <?php if ($support->active == 1) : ?>
     <?php $prefix = ''; ?>
     <?php if ($support->tick48 == 1) $prefix = '+48 '; ?>
-    <section class="sep_top-xl">
+    <section class="sep_top-xl main_padding">
         <h1 class="ruton_title"><?= $support->subtitle; ?><span class="top_line" style="left: 54%;"></span></h1>
         <div class="flex_box flex_c">
             <div class="desc_4">
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="flex_box flex_c sep_top-m">
-            <div class="call_block flex_align_e">
+            <div class="call_block">
                 <img class="call_icon" src="<?= base_url('assets/front/icons/call.svg'); ?>">
                 <a href="tel:<?= $contact->phone2; ?>" class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></a>
             </div>

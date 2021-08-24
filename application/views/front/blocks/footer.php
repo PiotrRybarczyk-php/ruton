@@ -16,20 +16,20 @@
     </div>
     <div class="block-2">
         <div class="grid-12">
-            <div class="f-content size-3 mob_size-6">
+            <div class="f-content size-3 mob_size-12">
                 <h1>Ważne Informacje</h1>
                 <a href="<?= base_url('uploads/') . $settings->privace;  ?>">pliki cookies</a><br>
                 <a href="<?= base_url('uploads/') . $settings->privace;  ?>">polityka rodo</a><br>
                 <a href="kontakt"><?= $subpages[3]->subtitle; ?></a>
             </div>
-            <div class="f-content size-6">
+            <div class="f-content size-6 mob_size-12">
                 <h1>Oferta:</h1>
                 <a href="oferty"><?= $subpages[0]->subtitle; ?></a><br>
                 <a href="montaz"><?= $subpages[1]->subtitle; ?></a><br>
                 <a href="poradnik"><?= $subpages[2]->subtitle; ?></a>
             </div>
-            <div class="f-content size-3 mob_size-12">
-                <h1>Nasze Media:</h1>
+            <div class="f-content size-3 mob_size-12 mob_foot">
+                <h1 class="mob_hide">Nasze Media:</h1>
                 <a href="<?= $settings->fb_link; ?>"><img class="social_icon" src="<?= base_url('assets/front/icons/fb.svg'); ?>"></a><br>
             </div>
         </div>
@@ -38,7 +38,7 @@
 <script type="text/javascript" src="<?= assets(); ?>js/jquery-3.4.1.min.js"></script>
 <!-- <script type="text/javascript" src="<?= assets(); ?>js/bootstrap.min.js"></script> -->
 <!-- <script type="text/javascript" src="<?= assets(); ?>dist/owl.carousel.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script> -->
 <script type="text/javascript" src="<?= assets(); ?>js/lc_lightbox.lite.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lightbox.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/qanim.js"></script>

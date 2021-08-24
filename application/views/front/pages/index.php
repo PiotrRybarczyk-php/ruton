@@ -13,14 +13,16 @@
                     <div class="s_content">
                         <div class="s_box"></div>
                         <div class="s_box">
-                            <span class="bc_square" style="width:400px;height:360px;top:48%;left:-13%"></span>
+                            <span class="bc_square mob_hide" style="width:400px;height:360px;top:48%;left:-13%"></span>
+                            <span class="bc_square mob_block" style="width:92px;height:108px;top:48%;left:20%"></span>
                             <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
                             <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
                                 <div class="sep_top-m" style="text-transform:uppercase;min-height:135px;"><?= $item->subtitle; ?></div>
-                                <div class="flex_box flex_c sep_slider" style="max-width:320px;"><a href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
+                                <div class="flex_box flex_c sep_slider" style="max-width:320px;"><a class="mob_hide" href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
                             </div>
                         </div>
                     </div>
+                    <a class="mob_block s_mob_button" href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a>
                 </div>
             <?php endif; ?>
         <?php endforeach; ?>
@@ -62,7 +64,7 @@
                 <div class="content">
                     <span class="top_line"></span>
                     <h1><?= $item->title; ?></h1>
-                    <?= $item->description; ?>
+                    <?= textlim($item->description, 200); ?>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -122,7 +124,7 @@
 <?php if ($support->active == 1) : ?>
     <?php $prefix = ''; ?>
     <?php if ($support->tick48 == 1) $prefix = '+48 '; ?>
-    <section class="sep_top-xl">
+    <section class="sep_top-xl main_padding">
         <h1 class="ruton_title"><?= $support->subtitle; ?><span class="top_line" style="left: 54%;"></span></h1>
         <div class="flex_box flex_c">
             <div class="desc_4">
@@ -130,7 +132,7 @@
             </div>
         </div>
         <div class="flex_box flex_c sep_top-m">
-            <div class="call_block flex_align_e">
+            <div class="call_block">
                 <img class="call_icon" src="<?= base_url('assets/front/icons/call.svg'); ?>">
                 <a href="tel:<?= $contact->phone2; ?>" class="call_number"><?= $prefix; ?><i><?= $contact->phone2; ?></i></a>
             </div>

@@ -95,17 +95,8 @@ if ($cp == 'main') {
         }
     }
 
-    function clear_cache() {
-        console.log('cache_cleared!');
-        window.location.reload(true);
-    }
-
     window.onload = function() {
         //put here all library functions
-        <?php if (!isset($_SESSION['loaded'])) {
-            $_SESSION['loaded'] = true;
-            echo 'clear_cache();';
-        } ?>
         qanim();
         set_size();
         quavosh_slider(<?= $slider; ?>);

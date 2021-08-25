@@ -42,7 +42,7 @@
 <script type="text/javascript" src="<?= assets(); ?>js/lc_lightbox.lite.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/lightbox.js"></script>
 <script type="text/javascript" src="<?= assets(); ?>js/qanim.js"></script>
-<script type="text/javascript" src="<?= assets(); ?>js/quavosh-slider.js"></script>
+<script type="text/javascript" src="<?= assets(); ?>js/quavosh-slider.js?v=1.1"></script>
 <?php if ($cp == 'kontakt') : ?><script src="https://www.google.com/recaptcha/api.js?render=<?= $settings->captcha ?>"></script> <?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 

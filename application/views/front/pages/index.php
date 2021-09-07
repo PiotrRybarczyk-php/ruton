@@ -56,7 +56,7 @@
     </div>
     <div class="grid-3 gtab-2 gmob-1 sep_top-xl main_padding">
         <?php foreach ($tiles1 as $item) : ?>
-            <div class="block_normal ruton_tile sep_bot-l">
+            <div class="block_normal ruton_tile sep_bot-l hov_tile1" onclick="location.href = '<?= base_url() . 'oferty#' . $item->offer_id ?>';">
                 <span class="bc_square" style="width:83%;height:100%;"></span>
                 <span class="tile_circle">
                     <img class="circle_icon" src="<?= base_url('uploads/') . $item->photo; ?>">
@@ -87,7 +87,7 @@
                 <?php foreach ($tiles2 as $item) : ?>
                     <?php if ($item->photo_webp == $item->photo) $temp_photo = $item->photo_webp;
                     else $temp_photo = $item->photo; ?>
-                    <div class="info_item">
+                    <div class="info_item hov_tile2" onclick="location.href = '<?= base_url() . 'montaz#' . $item->offer_id ?>';">
                         <div class="info_bc lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>
                         <div class="info_text">
                             <p><?= $item->title; ?></p>

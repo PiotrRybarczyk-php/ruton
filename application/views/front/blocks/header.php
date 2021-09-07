@@ -121,6 +121,10 @@
       color: <?= $settings->second_color; ?> !important;
     }
 
+    .hov_tile2:hover>.info_text {
+      background-color: <?= $settings->second_color; ?> !important;
+    }
+
     .btn_self {
       background-color: <?= $settings->second_color; ?> !important;
     }

@@ -16,7 +16,7 @@
 <?php foreach ($offer as $item) : ?>
     <?php if ($item->active == 1) : ?>
         <?php if ($i % 2 == 0) : ?>
-            <section>
+            <section id="<?= $item->id ?>">
                 <div class="flex_box flex_c sep_bot-m">
                     <div class="grid-2 gtab-1 tab_pad" style="max-width:1110px">
                         <div class="block_normal">
@@ -38,7 +38,7 @@
                 </div>
             </section>
         <?php else : ?>
-            <section>
+            <section id="<?= $item->id ?>">
                 <div class="flex_box flex_c sep_bot-m tab_hide">
                     <div class="grid-2 gtab-1 tab_pad" style="max-width:1110px">
                         <div class="block_normal">

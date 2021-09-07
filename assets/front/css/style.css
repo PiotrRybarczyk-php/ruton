@@ -33,6 +33,28 @@
       transition: 0.3s;
     }
 
+    .hov_tile1{
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hov_tile2 {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hov_tile2:hover > .info_text{
+      background-color: #FDAF2A;
+    }
+
+    .hov_tile1:hover > .bc_square {
+      background-color: #dad9d9;
+    }
+
+    .hov_tile1:hover > .content .top_line {
+      width: 200px;
+    }
+
     .rodo_collapse:hover{
          color: #FDAF2A;
     }
@@ -409,6 +431,7 @@
 
     .content .top_line {
       margin-left: 40px;
+      transition: 0.3s;
     }
 
     .info_2{
@@ -439,6 +462,7 @@
         justify-content: flex-end;
         padding-right: 15px;
         background-color: #95C11F;
+        transition: inherit;
     }
 
     .info_text p{
@@ -539,7 +563,8 @@
 
     .guide_img{
       background-color: rgba(0,0,0,0);
-      background-position: 100% center;
+      background-repeat: no-repeat;
+      background-position: 400% -120px;
       background-size: cover;
       width: 100%;
       height: 600px;
@@ -1224,6 +1249,10 @@
       }
       .art_pad-l{
         padding-left: 2vw;
+      }
+      .guide_img{
+        background-position: 100% center;
+
       }
     }
     @media(max-width: 1024px) {

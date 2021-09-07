@@ -50,6 +50,18 @@
       </div>
       <div class="row no-gutters">
         <div class="col-12 col-sm-4 col-lg-2">
+          Link Oferty:
+        </div>
+        <div class="col-12 col-sm-8 col-lg-9">
+          <select class="form-control" id="offer_id" name="offer_id">
+            <?php foreach ($offer as $item) : ?>
+              <option <?php if (@$value->offer_id == $item->id) echo "selected"; ?> value="<?= $item->id; ?>"><?= $item->title; ?></option>
+            <?php endforeach; ?>
+          </select>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-4 col-lg-2">
           Krótki opis:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">

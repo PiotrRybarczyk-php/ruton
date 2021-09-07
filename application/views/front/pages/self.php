@@ -17,7 +17,7 @@
 <?php foreach ($offer as $item) : ?>
     <?php if ($item->active == 1) : ?>
         <?php if ($i % 2 == 0) : ?>
-            <section>
+            <section id="<?= $item->id ?>">
                 <div class="flex_box flex_c sep_bot-m">
                     <span class="bc_square" style="max-width:1660px;height:340px;width:100%;right:0%;"></span>
                     <div class="block_normal main_padding">
@@ -41,7 +41,7 @@
                 </div>
             </section>
         <?php else : ?>
-            <section>
+            <section id="<?= $item->id ?>">
                 <div class="flex_box flex_c sep_bot-m tab_hide">
                     <span class="bc_square" style="max-width:1660px;height:340px;width:100%;left:0%;"></span>
                     <div class="block_normal main_padding">

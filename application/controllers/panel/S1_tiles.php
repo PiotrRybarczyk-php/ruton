@@ -33,6 +33,7 @@ class S1_tiles extends CI_Controller
 
 			if ($id != '') {
 				$data['value'] = $this->back_m->get_one($table, $id);
+				$data['offer'] = $this->back_m->get_all('offer');
 			}
 			echo loadSubViewsBack($table, 'form', $data);
 		} else {

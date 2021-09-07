@@ -57,7 +57,7 @@
     <div class="grid-3 gtab-2 gmob-1 sep_top-xl main_padding">
         <?php foreach ($tiles1 as $item) : ?>
             <div class="block_normal ruton_tile sep_bot-l hov_tile1" onclick="location.href = '<?= base_url() . 'oferty#' . $item->offer_id ?>';">
-                <span class="bc_square" style="width:83%;height:100%;"></span>
+                <?php if ($item->id % 2 != 0) : ?><span class="bc_square" style="width:83%;height:100%;"></span><?php endif; ?>
                 <span class="tile_circle">
                     <img class="circle_icon" src="<?= base_url('uploads/') . $item->photo; ?>">
                 </span>

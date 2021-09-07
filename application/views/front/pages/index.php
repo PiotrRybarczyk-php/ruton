@@ -2,7 +2,7 @@
 <div class="flex_box sep_bot-xl">
     <div class="fader" id="slider-1">
         <?php foreach ($slider as $item) : ?>
-            <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
+            <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo;
             else $temp_photo = $item->photo; ?>
             <?php if ($item->active == 1) : ?>
                 <div class="Slides lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)">
@@ -37,7 +37,7 @@
 </div>
 <section>
     <div class="temp_flex main_padding sep_top-xl">
-        <?php if (!empty($s1->photo_webp)) $temp_photo = $s1->photo_webp;
+        <?php if (!empty($s1->photo_webp)) $temp_photo = $s1->photo;
         else $temp_photo = $s1->photo; ?>
         <div class="box_1 mob_hide lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>
         <div class="box_2">
@@ -85,7 +85,7 @@
         <div class="block_normal size-2">
             <div class="info_2 grid-4 gtab-2 gmob-1">
                 <?php foreach ($tiles2 as $item) : ?>
-                    <?php if (!empty($item->photo_webp)) $temp_photo = $item->photo_webp;
+                    <?php if ($item->photo_webp == $item->photo) $temp_photo = $item->photo_webp;
                     else $temp_photo = $item->photo; ?>
                     <div class="info_item">
                         <div class="info_bc lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>

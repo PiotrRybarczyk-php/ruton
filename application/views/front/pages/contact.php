@@ -1,3 +1,10 @@
+<?php
+if (isset($_GET['link'])) {
+    $subject = $_GET['link'];
+} else {
+    $subject = '';
+}
+?>
 <script>
     var rodo_text = '<?= $settings->rodo; ?>';
     var rodo_expanded = false;
@@ -32,7 +39,7 @@
     <form action="<?= base_url(); ?>mailer/send" method="POST" id="contact-form">
         <div class="flex_box flex_c sep_top-l">
             <div class="contact_form">
-                <input required class="form_input" type="text" name="subject" placeholder="Temat Wiadomości">
+                <input required class="form_input" type="text" name="subject" value="<?= $subject; ?>" placeholder="Temat Wiadomości">
                 <input required class="form_input" type="text" name="name" placeholder="Imię i Nazwisko">
                 <input required class="form_input" type="text" name="phone" placeholder="Telefon kontaktowy">
                 <input required class="form_input" type="text" name="email" placeholder="Adres e-mailowy">

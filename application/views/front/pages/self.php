@@ -34,7 +34,7 @@
                             <div class="block_normal size-2 self_pad-r">
                                 <div class="self_pic" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);"></div>
                                 <span class="green_square" style="max-width:480px;"></span>
-                                <button class="btn_self">kontakt</button>
+                                <button class="btn_self" onclick="location.href = '<?= base_url() . 'kontakt?link=' . slug($item->title); ?>';">kontakt</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <div class="block_normal size-2 self_pad-r">
                                 <div class="self_pic" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);float:right;"></div>
                                 <span class="green_square" style="max-width:480px;float:right;"></span>
-                                <div class="flex_box flex_mob_e" style="float:right;"><button class="btn_self">kontakt</button></div>
+                                <div class="flex_box flex_mob_e" style="float:right;"><button class="btn_self" onclick="location.href = '<?= base_url() . 'kontakt?link=' . slug($item->title); ?>';">kontakt</button></div>
                             </div>
                             <div class="block_normal tab_size-2">
                                 <div class="self_block-title">
@@ -79,7 +79,7 @@
                             <div class="block_normal size-2 self_pad-r">
                                 <div class="self_pic" style="background-image:url(<?= base_url('uploads/') . $item->photo; ?>);"></div>
                                 <span class="green_square" style="max-width:480px;"></span>
-                                <button class="btn_self">kontakt</button>
+                                <button class="btn_self" onclick="location.href = '<?= base_url() . 'kontakt?link=' . slug($item->title); ?>';">kontakt</button>
                             </div>
                         </div>
                     </div>

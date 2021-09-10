@@ -36,6 +36,7 @@ class Home extends CI_Controller
 		$data['blog'] = $this->back_m->get_all('blog');
 		$data['support'] = $this->back_m->get_one('support', 1);
 		$data['partner'] = $this->back_m->get_all('partners');
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('index', $data);
 	}
 
@@ -48,6 +49,7 @@ class Home extends CI_Controller
 		$data['offer'] = $this->back_m->get_by_order('offer', 'queue');
 		$data['support'] = $this->back_m->get_one('support', 2);
 		$data['partner'] = $this->back_m->get_all('partners');
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('offer', $data);
 	}
 
@@ -59,6 +61,7 @@ class Home extends CI_Controller
 		$data['banner'] = $this->back_m->get_one('banners', 3);
 		$data['offer'] = $this->back_m->get_by_order('info', 'queue');
 		$data['support'] = $this->back_m->get_one('support', 3);
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('self', $data);
 	}
 	public function blog()
@@ -68,6 +71,7 @@ class Home extends CI_Controller
 		$data['logo'] = $this->back_m->get_one('banners', 1);
 		$data['banner'] = $this->back_m->get_one('banners', 4);
 		$data['blog'] = $this->back_m->get_with_limit('blog', 10, 'desc');
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('blog', $data);
 	}
 
@@ -79,6 +83,7 @@ class Home extends CI_Controller
 		$data['banner'] = $this->back_m->get_one('banners', 5);
 		$data['contact_desc'] = $this->back_m->get_all('contact');
 		$data['support'] = $this->back_m->get_one('support', 4);
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('contact', $data);
 	}
 
@@ -91,6 +96,7 @@ class Home extends CI_Controller
 		$data['article'] = $this->back_m->get_one('blog', $id);
 		$data['photos'] = $this->back_m->get_images('gallery', 'blog', $id);
 		$data['blog'] = $this->back_m->get_all('blog');
+		$data['footer'] = $this->back_m->get_one('banners', 7);
 		echo loadViewsFront('single_article', $data);
 	}
 }

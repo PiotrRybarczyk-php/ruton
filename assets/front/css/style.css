@@ -201,7 +201,7 @@
       display: flex;
       background-size: 80% 110%;
       background-position: left;
-      background-repeat: no-repeat;
+      background-repeat: repeat-x;
     }
     
     .s_box {
@@ -1572,7 +1572,8 @@
       }
 
       .white-bg{
-        width: 60%;
+        width: 50%;
+        max-height: 400px;
       }
 
       .scaler{
@@ -1606,7 +1607,7 @@
 
       .absolute_box {
         min-width: unset;
-        padding-left: 10vw;
+        /*padding-left: 10vw;*/
       }
 
       .absolute_box div{
@@ -1749,8 +1750,9 @@
         padding: 0px 20px 0px 20px;
       }
       .s_title {
-        left: 31px;
+        left: 8px;
         top: 0px;
+        font-size: 25px;
       }
       .slider_box_title h1{
         font-size: 25px;

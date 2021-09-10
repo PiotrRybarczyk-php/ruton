@@ -14,7 +14,7 @@
                         <div class="s_box"></div>
                         <div class="s_box">
                             <span class="bc_square mob_hide" style="width:400px;height:360px;top:48%;left:-13%"></span>
-                            <span class="bc_square mob_block" style="width:92px;height:108px;top:48%;left:20%"></span>
+                            <span class="bc_square mob_block" style="width:92px;height:108px;top:48%;left:0%"></span>
                             <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
                             <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
                                 <div class="sep_top-m" style="text-transform:uppercase;min-height:135px;"><?= $item->subtitle; ?></div>
@@ -43,7 +43,7 @@
         <div class="box_2">
             <span class="bc_square" style="width:400px;height:360px;top:12%;left:-1%"></span>
             <span class="bc_square mob_hide" style="width:74px;height:74px;top:-1%;left:385px"></span>
-            <div class="block_normal desk_pad qa_fade">
+            <div class="block_normal desk_pad">
                 <span class="top_line"></span>
                 <div class="sep_top-s">
                     <?= $s1->title; ?>
@@ -72,7 +72,7 @@
 </section>
 <section>
     <div class="grid-3 gtab-2 sep_top-xl main_padding">
-        <div class="block_normal desk_pad no_margin tab_size-2 qa_fade">
+        <div class="block_normal desk_pad no_margin tab_size-2">
             <span class="top_line"></span>
             <span class="bc_square" style="width:90vw;height:340px;top:-20px;left:67px;"></span>
             <div class="sep_top-s">
@@ -85,7 +85,7 @@
         <div class="block_normal size-2">
             <div class="info_2 grid-4 gtab-2 gmob-1">
                 <?php foreach ($tiles2 as $item) : ?>
-                    <?php if ($item->photo_webp == $item->photo) $temp_photo = $item->photo_webp;
+                    <?php if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) $temp_photo = $item->photo_webp;
                     else $temp_photo = $item->photo; ?>
                     <div class="info_item hov_tile2" onclick="location.href = '<?= base_url() . 'montaz#' . $item->offer_id ?>';">
                         <div class="info_bc lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>

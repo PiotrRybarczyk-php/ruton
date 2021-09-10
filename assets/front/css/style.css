@@ -1474,6 +1474,10 @@
         width: 60%;
       }
 
+      .info_bc{
+        height: 203px;
+      }
+
       .sep_slider{
         padding-top: 10px;
       }

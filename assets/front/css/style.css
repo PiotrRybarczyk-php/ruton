@@ -453,6 +453,7 @@
         height: 67%;
         background-position: center center;
         background-size: cover;
+        background-attachment: scroll;
     }
     .info_text{
         display: flex;

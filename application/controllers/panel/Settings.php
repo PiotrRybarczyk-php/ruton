@@ -151,14 +151,14 @@ class Settings extends CI_Controller
 					}
 
 					//WebP Converter
-					$photoWebP = convertImageToWebP($insert['photo']);
+					/*$photoWebP = convertImageToWebP($insert['photo']);
 					$keyFieldPhotoWebP = 'photo_webp';
 					if ($photoWebP[0] == true) {
 						$insert[$keyFieldPhotoWebP] = $now . '/' . $photoWebP[1];
 						createWebPField('gallery', $keyFieldPhotoWebP);
 					} else {
 						$this->session->set_flashdata('flashdata', 'Zdjęcie nie zostało poprawnie zoptymalizowane!');
-					}
+					}*/
 					//WebP Converter
 					$this->back_m->insert('gallery', $insert);
 				}

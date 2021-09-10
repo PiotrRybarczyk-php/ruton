@@ -85,7 +85,7 @@
         <div class="block_normal size-2">
             <div class="info_2 grid-4 gtab-2 gmob-1">
                 <?php foreach ($tiles2 as $item) : ?>
-                    <?php if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) $temp_photo = $item->photo_webp;
+                    <?php if (stripos($_SERVER['HTTP_USER_AGENT'], 'Chrome') !== false) $temp_photo = $item->photo_webp;
                     else $temp_photo = $item->photo; ?>
                     <div class="info_item hov_tile2" onclick="location.href = '<?= base_url() . 'montaz#' . $item->offer_id ?>';">
                         <div class="info_bc lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)"></div>

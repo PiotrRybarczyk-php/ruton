@@ -50,6 +50,14 @@
       </div>
       <div class="row no-gutters">
         <div class="col-12 col-sm-4 col-lg-2">
+          Link mapy:
+        </div>
+        <div class="col-12 col-sm-8 col-lg-9">
+          <input class="form-control" type="text" name="link" value="<?= @$value->link; ?>" required>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-4 col-lg-2">
           Krótki opis:
         </div>
         <div class="col-12 col-sm-8 col-lg-9">

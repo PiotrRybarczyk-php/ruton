@@ -374,6 +374,11 @@
       background-size:contain;
       background-repeat: no-repeat;
       background-position: center;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .map_box:hover{
+      opacity: 0.5;
     }
 
     .desc_5 {

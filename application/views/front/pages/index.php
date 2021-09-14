@@ -99,7 +99,7 @@
     </div>
 </section>
 <section class="sep_top-xl">
-    <h1 class="ruton_title"><?= $s3[0]->title; ?><span class="top_line" style="left: 44%;"></span><span class="bc_square" style="width:61vw;height:340px;top:40px;right:0px"></span></h1>
+    <h1 class="ruton_title"><?= $s3[0]->title; ?><span class="top_line mob_hide" style="left: 44%;"></span><span class="bc_square" style="width:61vw;height:340px;top:40px;right:0px"></span></h1>
     <div class="block_normal ruton_padding">
         <div class="grid-2 gtab-1 sep_top-m">
             <div class="flex_box flex_mob">
@@ -125,7 +125,7 @@
     <?php $prefix = ''; ?>
     <?php if ($support->tick48 == 1) $prefix = '+48 '; ?>
     <section class="sep_top-xl main_padding">
-        <h1 class="ruton_title"><?= $support->subtitle; ?><span class="top_line" style="left: 54%;"></span></h1>
+        <h1 class="ruton_title"><?= $support->subtitle; ?><span class="top_line mob_hide" style="left: 54%;"></span></h1>
         <div class="flex_box flex_c">
             <div class="desc_4">
                 <?= $support->description; ?>
@@ -141,7 +141,7 @@
 <?php endif; ?>
 <section class="sep_top-xl">
     <h1 class="ruton_title">
-        <div class="title_offset"><i>Zaufali </i>nam<span class="top_line" style="left: 1%;"></span></div>
+        <div class="title_offset"><i>Zaufali </i>nam<span class="top_line mob_hide" style="left: 1%;"></span></div>
     </h1>
     <div class="flex_box">
         <div class="scaler" id="slider-2">
@@ -172,8 +172,9 @@
         <div class="custom_box-1">
             <span class="bc_square tab_hide" style="max-width:639px;width:100%;height:340px;left:600px;"></span>
             <div class="block_normal desk_pad no_margin tab_size-2">
-                <span class="top_line"></span>
+                <span class="top_line mob_hide"></span>
                 <div class="sep_top-l">
+                    <span class="top_line mob_block" style="top:45px;"></span>
                     <?= $s4->title; ?>
                     <div class="desc_5 sep_top-m">
                         <?= $s4->description; ?>
@@ -202,8 +203,9 @@ for ($i; $i < count($blog); $i++) {
     <span class="bc_square tab_hide" style="max-width:1200px;width:100%;height:340px;top:370px;left:180px;"></span>
     <div class="grid-3 gtab-2 main_padding">
         <div class="block_normal desk_pad tab_size-2" style="margin-left:unset;">
-            <span class="top_line"></span>
+            <span class="top_line mob_hide"></span>
             <div class="sep_top-l">
+                <span class="top_line mob_block" style="top:45px;"></span>
                 <?= $s5->title; ?>
             </div>
             <div class="guide_img mob_hide lazy" data-bg="url(<?= base_url('uploads/') . $s5->photo; ?>)">

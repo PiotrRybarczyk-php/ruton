@@ -52,7 +52,7 @@
                         <div class="grid-3 gtab-2 gmob-1">
                             <div class="flex_box flex_c md_padding">
                                 <div class="block_normal" style="max-width:404px;">
-                                    <span class="green_square" style="max-width:183px;"></span>
+                                    <span class="green_square mob_hide" style="max-width:183px;"></span>
                                     <div class="art_pic-2" style="background-image:url(<?= base_url('uploads/') . $blog[$i]->photo; ?>)"></div>
                                     <div class="slider_box_title">
                                         <h1><span class="top_line" style="top:0px;"></span><?= $blog[$i]->subtitle; ?></h1>

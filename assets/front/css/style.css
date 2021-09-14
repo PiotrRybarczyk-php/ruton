@@ -1076,6 +1076,7 @@
     input.form_rodo{
       cursor: pointer;
       appearance: none;
+      -webkit-appearance: none;
       width: 22px;
       height: 22px;
       background-color: #95C11F;
@@ -1777,16 +1778,22 @@
         padding-bottom: 40px;
       }
       .desc_4{
-        font-size:12px;
+        font-size:16px;
       }
       .mob_foot{
         display: flex !important;
         justify-content: center;
       }
+      .tile_circle {
+        top: -42px;
+        height: 120px;
+        width: 120px;
+      }
+  
     }
     @media(max-width:350px){
       .scaler{
-        min-height: 1124px;
+        min-height: 1035px;
       }
       .s_mob_button{
         left: 10%;
@@ -1796,5 +1803,6 @@
       }
       .banner_title{
         font-size: 27px;
+        text-align: center;
       }
     }

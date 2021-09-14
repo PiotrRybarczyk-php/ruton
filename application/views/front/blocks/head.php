@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php $version = '?v=' . 1.3; ?>
+<?php $version = '?v=' . 1.4; ?>
 
 <head>
   <meta charset="utf-8" />

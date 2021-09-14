@@ -1772,7 +1772,7 @@
         height: 200px;
       }
       .sep_top-xl{
-        padding-top: 40px;
+        padding-top: 20px;
       }
       .sep_bot-xl{
         padding-bottom: 40px;
@@ -1789,12 +1789,12 @@
         height: 120px;
         width: 120px;
       }
-  
-    }
-    @media(max-width:350px){
       .scaler{
         min-height: 1035px;
       }
+  
+    }
+    @media(max-width:350px){
       .s_mob_button{
         left: 10%;
       }

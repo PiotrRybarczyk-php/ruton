@@ -1587,7 +1587,7 @@
       }
 
       .scaler{
-        min-height: 1072px;
+        min-height: 945px;
       }
       .scaler .dot_box{
         left: unset;
@@ -1621,7 +1621,7 @@
       }
 
       .absolute_box div{
-        font-size: 12px;
+        font-size: 16px;
         width: 128px;
         padding-left: 5px;
       }
@@ -1795,7 +1795,14 @@
         width: 120px;
       }
       .scaler{
-        min-height: 1035px;
+        min-height: 945px;
+      }
+      .banner_title{
+        font-size: 27px;
+        text-align: center;
+      }
+      .s_title{
+        font-size: 34px;
       }
   
     }
@@ -1803,11 +1810,13 @@
       .s_mob_button{
         left: 10%;
       }
+      .s_title{
+        font-size: 30px;
+      }
       .fader .dot_box {
         left: 11% !important;
       }
-      .banner_title{
-        font-size: 27px;
-        text-align: center;
+      .scaler{
+        min-height: 1013px;
       }
     }

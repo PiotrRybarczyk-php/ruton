@@ -1547,6 +1547,7 @@
 
       .offer_pic{
         min-height: 320px;
+        height: 320px;
       }
 
       .call_number{

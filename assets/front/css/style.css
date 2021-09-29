@@ -203,6 +203,14 @@
       background-position: left;
       background-repeat: repeat-x;
     }
+    .fill_right{
+      position: absolute;
+      width: 32px;
+      height: 100%;
+      background-color: white;
+      right: -1%;
+
+    }
     
     .s_box {
       width: 50%;
@@ -219,6 +227,12 @@
       top: 7%;
       width: 100%;
       text-align: center;
+    }
+    #slider-square{
+      width:128px;
+      height:128px;
+      top:2%;
+      left:66%;
     }
 
     .s_content {
@@ -1201,6 +1215,13 @@
     .set_height{
       height: 237px;
     }
+    #foot-desc a{
+      font-weight: 700;
+    }
+    .slider-title{
+      text-transform:uppercase;
+      min-height:135px;
+    }
 
     @media(max-width: 1600px) {
       .fader .dot_box {
@@ -1259,6 +1280,9 @@
       .guide_img{
         background-position: 100% center;
 
+      }
+      #desc-1{
+        padding-right: 16px !important;
       }
     }
     @media(max-width: 1024px) {
@@ -1472,6 +1496,14 @@
       .guide_tile{
         height: 230px;
       }
+      #slider-square{
+        width:88px;
+        height:88px;
+      }
+      .slider-title{
+        width: 72% !important;
+        line-height: 20px !important;
+      }
     }
 
     @media(max-width:500px) {
@@ -1481,6 +1513,11 @@
 
       .info_bc{
         height: 203px;
+      }
+
+      .slider-title{
+        width: 100% !important;
+        line-height: 16px !important;
       }
 
       .sep_slider{
@@ -1807,17 +1844,22 @@
       }
   
     }
+    @media(max-width:370px){
+      .s_title{
+        font-size: 26px;
+      }
+    }
     @media(max-width:350px){
       .s_mob_button{
         left: 10%;
-      }
-      .s_title{
-        font-size: 26px;
       }
       .fader .dot_box {
         left: 11% !important;
       }
       .scaler{
         min-height: 1013px;
+      }
+      .slider-title{
+        font-size: 14px !important;
       }
     }

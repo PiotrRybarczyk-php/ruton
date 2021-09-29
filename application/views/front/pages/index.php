@@ -6,6 +6,7 @@
             else $temp_photo = $item->photo; ?>
             <?php if ($item->active == 1) : ?>
                 <div class="Slides lazy" data-bg="url(<?= base_url('uploads/') . $temp_photo; ?>)">
+                    <div class="fill_right"></div>
                     <div class="mask">
                         <h1 class="s_title"><?= $item->title; ?></h1>
                         <div class="white-bg"></div>
@@ -15,9 +16,9 @@
                         <div class="s_box">
                             <span class="bc_square mob_hide" style="width:400px;height:360px;top:48%;left:-13%"></span>
                             <span class="bc_square mob_block" style="width:92px;height:108px;top:48%;left:0%"></span>
-                            <span class="bc_square mob_hide" style="width:128px;height:128px;top:2%;left:66%"></span>
+                            <span class="bc_square mob_hide" id="slider-square"></span>
                             <div class="absolute_box" style="width:min-content;height:360px;top:48%;">
-                                <div class="sep_top-m" style="text-transform:uppercase;min-height:135px;"><?= $item->subtitle; ?></div>
+                                <div class="sep_top-m slider-title"><?= $item->subtitle; ?></div>
                                 <div class="flex_box flex_c sep_slider" style="max-width:320px;"><a class="mob_hide" href="<?= $item->link; ?>"><button class="btn_ruton"><?= $item->button; ?></button></a></div>
                             </div>
                         </div>
@@ -77,7 +78,7 @@
             <span class="bc_square" style="width:90vw;height:340px;top:-20px;left:67px;"></span>
             <div class="sep_top-s">
                 <?= $s2->title; ?>
-                <div class="desc_2 sep_top-m">
+                <div class="desc_2 sep_top-m" id="desc-1">
                     <?= $s2->description; ?>
                 </div>
             </div>

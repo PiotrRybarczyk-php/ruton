@@ -20,7 +20,7 @@ if (isset($_GET['link'])) {
 </div>
 <div class="flex_box flex_c sep_top-xl sep_bot-xl main_padding">
     <span class="bc_square" style="max-width:1240px;height:200px;width:100%;right:0px;"></span>
-    <span class="bc_square tab_hide" style="max-width:156px;height:156px;width:100%;left:10%;"></span>
+    <span class="bc_square smd_hide" style="max-width:156px;height:156px;width:100%;left:10%;"></span>
     <div class="grid-2 gtab-1" style="max-width:1438px;">
         <div class="contact_desc">
             <?= $contact_desc[0]->description; ?>

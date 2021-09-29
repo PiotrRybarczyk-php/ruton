@@ -5,7 +5,7 @@
         <div class="f-content">
             <a href="<?= base_url(); ?>" class="navbar_logo" style="margin-right:0px;"><img src="<?= base_url('uploads/') . $logo->photo; ?>"></a>
             <div class="footer_contact">
-                <desc><?= textlim($footer->description, 162); ?></desc>
+                <desc id='foot-desc'><?= textlim($footer->description, 162); ?></desc>
                 <p><?= $contact->zip_code . ' ' . $contact->city; ?></p>
                 <p><?= $contact->address; ?></p>
                 <p><?= $contact->label6 ?>: <?= $contact->NIP; ?></p>
@@ -86,7 +86,7 @@ if ($cp == 'main') {
     function rodo_collapse() {
         if (rodo_expanded == false) {
             rodo_expanded = true;
-            document.getElementById('rodo').innerHTML = rodo_text;
+            document.getElementById('rodo').innerHTML = rodo_text + ' ' + '<a href="<?= base_url('uploads/') . $settings->privace;  ?>"><strong>Polityka prywatności</strong></a>';
             document.getElementById('expand').innerHTML = ' Mniej';
         } else {
             rodo_expanded = false;
